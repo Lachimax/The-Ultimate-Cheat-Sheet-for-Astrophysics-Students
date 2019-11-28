@@ -1,0 +1,1103 @@
+\chapter{Mathematics}
+
+
+
+	\section{Notation}
+\begin{itemize}
+\itemt \( [f(x)]^a_b = f(a) - f(b)\)
+\end{itemize}
+
+
+	\section{Algebra}
+
+\subsection{Factorisation}
+\begin{itemize}
+\itemt \( (a+b)^2 = a^2 + b^2 + 2ab^2 \)
+\itemt \( (a-b)^2 = a^2 + b^2 - 2ab^2 \)
+\itemt \( a^2-b^2 = (a+b)(a-b) \)
+\itemt \( (a+b)(a+c) = a^2 + (b+c)a + bc \)
+\itemt \( (a+b)^3 = a^3 +3ab^2 + 3a^2b + b^3 \)
+\itemt \( (a-b)^3 = a^3 + 3ab^2 - 3a^2b - b^3 \)
+\itemt \( a^3 + b^3 = (a+b)(a^2-ab+b^2) \)
+\itemt \( a^3 - b^3 = (a-b)(a^2 + ab + b^2) \)
+\itemt \( a^{2n} - b^{2n} = (a^n - b^n)(a^n + b^n) \)
+\end{itemize}
+
+\subsection{Absolute Value}
+\begin{itemize}
+\itemt \( |ab|=|a||b| \)
+\itemt \( |\dfrac{a}{b}| = \dfrac{|a|}{|b|} \)
+\itemt \( |a+b| \leq |a|+|b| \)
+\end{itemize}
+
+\subsection{Quadratics}
+
+\subsubsection{Quadratic Formula}
+For $ax^2 + bx + c = 0$, $a\neq 0$:
+\begin{itemize}
+\itemt x = \( \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)
+\itemt \( b^2 - 4ac > 0 \) - two real unequal solutions.
+\itemt \( b^2 - 4ac = 0 \) - repeated real solution.
+\itemt \( b^2 - 4ac < 0 \) - two complex solutions.
+\end{itemize}
+
+\subsection{Logarithms}
+
+\begin{itemize}
+\itemt \( y = \log_b (x);\ x = b^y \)
+\itemt \( \log_b(xy) = \log_bx + \log_b(y) \)
+\itemt \( \log_b(\dfrac{x}{y}) = \log_bx - \log_b(y) \)
+\itemt \( \log_b(x^p) = p\log_bx \)
+\itemt \( \log_b(b^x) = x \)
+\itemt \( \log_b(a) = \dfrac{\log_d(a)}{\log_d(b)} \)
+\item[]
+\itemt \( \log_b(\sqrt[p]{x}) = \log \)
+\itemt \( p\log_bx + q\log_b(y) = \log(x^p y^q) \)
+\itemt \( b^{\log_bx} = x \)
+\itemt \( \log_b(b) = 1 \)
+\itemt \( \log_b(1) = 0 \)
+\end{itemize}
+
+\subsection{Vectors}
+
+\subsubsection{Dot Product}
+\begin{itemize}
+\itemt \( \vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3 + \ldots +a_nb_n = ab\cos\theta \)
+\end{itemize}
+
+\def\arraystretch{1}
+\subsubsection{Cross Product}
+\begin{itemize}
+\itemt \( \vec{a} \times \vec{b} =\ 
+\begin{vmatrix}
+\hat{i} & \hat{j} 	& \hat{k} 	\\
+a_1		& a_2		& a_3		\\
+b_1		& b_2		& b_3		
+\end{vmatrix}  = (a_2b_3 - a_3b_2)\hat{i}\ + (a_3b_1 - a_1b_3)\hat{j} + (a_1b_2 - a_2b_1)\hat{k} = ab\sin\theta\hat{n} \)
+\itemt \( \vec{a} \times \vec{b} = - \vec{b} \times \vec{a} \)
+\itemt \( \vec{a} \times (\vec{b} + \vec{c}) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c} \)
+\itemt \( \vec{a} \times \vec{b} = 0 \)
+\end{itemize}
+
+\subsubsection{Vector Product Identities}
+\begin{itemize}
+    \itemt \( \vec{a}\cdot(\vec{b}\times\vec{c}) = \vec{c}\cdot(\vec{a}\times\vec{b})) \)
+\end{itemize}
+
+\subsection{Factorials}
+\begin{itemize}
+\itemt \( n! = n(n-1)(n-2)...(2)(1) \)
+\itemt \( (n+1)! = (n+1)n! \)
+\end{itemize}
+
+\subsubsection{Stirling's approximation}
+\begin{itemize}
+\itemt \( n! \approx n \ln (n) - n + O(\ln(n))\)
+\end{itemize}
+
+\subsubsection{The Factorial Integral}
+\begin{itemize}
+\itemt \( \int\limits_0^\infty x^ne^{-x} \dn x \)
+\end{itemize}           
+
+\subsection{Inner product definition}     
+\begin{enumerate}
+\item Linear in first variable:
+\subitem \( (\alpha a+\beta b, c) = \alpha(a,c) + \beta(b,c)\)
+\item Positive-definite:
+\subitem \( (a,a) \geq 0, (a,a) = 0\ \iff a = 0 \)
+\item Conjugate symmetrical:
+\subitem \( (a,b)=(b,a)^* \)
+\subitem \( (a,b)=(b,a),\ b,a \in \mathbf{R} \)					
+\end{enumerate}	
+
+\subsection{Complex Numbers}
+\begin{itemize}
+\itemt \( z = a + ib = \Re(z) + \Im(z)i \)
+\end{itemize}
+
+\subsubsection{Euler's Formula}				
+\begin{itemize}
+\itemt \( e^{i\theta} = \cos{\theta} + i\sin{\theta} \)
+\itemt \( re^{i\theta} = |z|e^{i\theta} = r(\cos{\theta} + i\sin{\theta}) \)
+\end{itemize}
+
+\subsubsection{De Moivre's Formula}				
+\begin{itemize}
+\itemt \( (\cos x + i\sin x)^n = \cos(nx) + i\sin(nx) \)
+\end{itemize}				
+
+\subsubsection{Complex Modulus}				
+\begin{itemize}
+\itemt \( r = |z| = |a+ib| = \sqrt{a^2+b^2} = \sqrt{\Re^2(z)+\Im^2(z)} \)
+\end{itemize}
+
+\subsubsection{Complex Conjugate}				
+\begin{itemize}
+\itemt \( \bar{z} = \bar{(a+ib)} = a-ib \)
+\itemt \( \bar{(a+ib)}(a+ib) = |a+ib|^2 \)
+\end{itemize}
+
+\subsubsection{Complex Argument}
+\begin{itemize}
+\itemt \( \theta = \mathrm{arg} (z) = \arctan(\dfrac{a}{b}) = \arctan(\dfrac{\Im(z)}{\Re(z)}) \)
+\end{itemize}		
+
+\subsection{Power Series}
+\begin{itemize}
+\itemt \( f(x) = \sum\limits_{n=0}^{\infty} f_n x^n \)
+\end{itemize}
+
+\subsubsection{Notable Series}			
+\begin{itemize}
+\itemt \( e^x = \sum\limits_{n=0}^{\infty} \dfrac{x^n}{n!} = 1 + x + \dfrac{x^2}{2} + \dfrac{x^3}{6} + \dfrac{x^4}{24} + \dfrac{x^5}{120} + \dots \)					
+\itemt \( \sin x = \sum\limits_{n=0}^{\infty} \dfrac{(-1)^n}{(2n+1)!}x^{2n+1} = x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} -... \)					
+\itemt \(\cos x = \sum\limits_{n=0}^{\infty} \dfrac{(-1)^n}{(2n)!}x^{2n} = 1 - \dfrac{x^2}{2!} + \dfrac{x^4}{4!} - ...\)
+\end{itemize}
+
+\subsection{Matrix Operations}
+
+\subsubsection{Determinant}
+\begin{itemize}
+\itemt \(
+\begin{vmatrix}
+a	& b	\\
+c	& d \\
+\end{vmatrix}
+= ad-bc
+\)
+\end{itemize}
+
+\subsubsection{Transpose}			
+\begin{itemize}
+\itemt \( a^T_{jk} = a_{kj} \)
+\itemt \( (AB)^T = B^T A^T \)
+\itemt Linear: \( (A+B)^T = A^T+B^T \)
+\itemt \( (rA)^T=rA^T \)
+\end{itemize}		
+
+\subsubsection{Hermitian Adjoint}			
+\begin{itemize}
+\itemt \( A^\dagger \equiv (A^*)^T = (A^T)^* \)
+\itemt \( (AB)^\dagger = B^\dagger A^\dagger \)
+\itemt \( (A+B)^\dagger = A^\dagger +B^\dagger \)
+\end{itemize}
+
+\subsubsection{Trace}			
+\begin{itemize}
+\itemt \( \mathrm{Tr} (A) = \sum\limits_{j}^{n} a_{jj} \)
+\itemt Cyclic: \( \mathrm{Tr} (AB) = \mathrm{Tr} (AB) \)
+\itemt Linear: \( \mathrm{Tr} (A+B) = \mathrm{Tr} (A)+\mathrm{Tr} (B) \)
+\subitem \hspace*{1cm} \( \mathrm{Tr} (aB) = a \mathrm{Tr} (B) , a \in \mathbf{C} \)
+\itemt \( \mathrm{Tr} (SAS^{-1}) = \mathrm{Tr} (A) \)
+\end{itemize}
+
+\subsubsection{Hilbert-Schmidt Inner Product}			
+\begin{itemize}
+\itemt \( (A,B) \equiv \mathrm{Tr} (A^{\dagger}B) \)
+\end{itemize}
+
+\subsubsection{Rank-Nullity Theorem}			
+\begin{itemize}
+\itemt \( \mathrm{rk} (A) = \mathrm{dim} (\mathrm{ker} (A))+\mathrm{dim} (\mathrm{im} (A)) \)
+\end{itemize}
+
+\subsection{Matrix Types}
+
+\subsubsection{Real Matrix}			
+\begin{itemize}
+\itemt \( a_{jk} \in \mathbf{R} \)
+\end{itemize}
+
+\subsubsection{Square Matrix}			
+\begin{itemize}
+\itemt \( m = n \)
+\end{itemize}
+
+\subsubsection{Symmetric Matrix}			
+\begin{itemize}
+\itemt \( A = A^T \)
+\itemt \( a_{jk} = a_{kj}\)
+\itemt Square
+\end{itemize}
+
+\subsubsection{Normal Matrix}			
+\begin{itemize}
+\itemt \( A^\dagger A = AA^\dagger \)
+\itemt Square 
+\itemt Diagonalisable
+\end{itemize}
+
+\subsubsection{Diagonal Matrix}			
+\begin{itemize}
+\itemt \( a_{jk} = 0, j \neq k \)
+\itemt \( \lambda_j = a_{jj} \)
+\itemt Square
+\itemt \( e^D = \begin{bmatrix}
+e^{d_{11}}	& 0 			& \cdots	& 0	\\
+0			& e^{d_{11}}	& \cdots	& 0 
+\end{bmatrix}\)
+\end{itemize}				
+
+\subsubsection{Diagonalisable Matrix}			
+\begin{itemize}
+\itemt \( A = PDP^{-1} \)
+\itemt Square
+\end{itemize}
+
+\subsubsection{Identity Matrix}				
+\begin{itemize}
+\itemt \( IA = A \)
+\itemt \( i_{jj} = 1 \)
+\itemt \( i_{jk} = 0, j \neq k \)
+\itemt Real
+\itemt Square
+\itemt Diagonal
+\itemt Symmetric
+\itemt Hermitian
+\end{itemize}		
+
+\subsubsection{Hermitian Matrix}			
+\begin{itemize}
+\itemt \( H = H^{\dagger} \)
+\itemt \( h_{jk} = h^*_{kj} \)
+\itemt \( h_{jj} \in \mathbf{R} \)
+\itemt \( \lambda \in \mathbf{R} \)
+\itemt Square
+\itemt Normal
+\itemt All real, square matrices are Hermitian
+\end{itemize}
+
+\subsubsection{Anti-Hermitian Matrix}			
+\begin{itemize}
+\itemt \( H = -H^{\dagger} \)
+\itemt \( H_{jk} = -H^*_{kj} \)
+\itemt Square
+\end{itemize}
+
+\subsubsection{Orthogonal Matrix}			
+\begin{itemize}
+\itemt \( A^T = A^{-1} \)
+\itemt \( AA^T = I \)
+\itemt \( (AA^T)_{jk} = \delta_{jk} \)
+\end{itemize}			
+
+\subsubsection{Positive Semidefinite}			
+\begin{itemize}
+\itemt \( A \geq 0 \)
+\itemt \( \hat{A^\dagger} = \hat{A}, \hat{A} \geq 0 \)
+\itemt \( B = \hat{A^\dagger} \hat{A} \) is positive semidefinite for any linear operator $\hat{A}$
+\itemt Positive semidefinite matrices are Hermitian
+\end{itemize}				
+
+\subsubsection{Projector}					
+\begin{itemize}
+\itemt \( \hat{P^2} = \hat{P} \)
+\itemt \( \lambda = 1\ or\ 0 \)
+\itemt \( P_1P_2 \mapsto \mathbf{H}_1 \cap \mathbf{H}_2 \)
+\itemt Projectors are Hermitian
+\end{itemize}			
+
+\subsubsection{Real Matrix}				
+\begin{itemize}
+\itemt \( A=A^* \)
+\itemt \( A_{jk} = A^*_{jk} \)
+\end{itemize}				
+
+\subsubsection{Imaginary Matrix}			
+\begin{itemize}
+\itemt \( A=-A^* \)
+\itemt \( A_{jk}=-A^*_{jk} \)
+\end{itemize}				
+
+\subsubsection{Symmetric Matrix}			
+\begin{itemize}
+\itemt \( A=A^T \)
+\itemt \( A_{jk} = A_{kj} \)
+\itemt Square
+\end{itemize}				
+
+\subsubsection{Antisymmetric Matrix}			
+\begin{itemize}
+\itemt \( A=-A^T \)
+\itemt \( a_{jk} = a_{kj} \)
+\itemt \( a_{jj} = 0 \)
+\itemt Square
+\end{itemize}		
+
+\subsubsection{Unitary Matrix}			
+\begin{itemize}
+\itemt \( {U}^\dagger {U} = {U}{U}^\dagger = I \)
+\itemt \( {U}^\dagger = {U}^{-1} \)
+\itemt \( ({U}^\dagger {U})_{jk} = \delta_{jk} \)
+\itemt Square
+\itemt Normal
+\itemt Hermitian
+\end{itemize}					
+
+
+\subsection{Change of Basis Unitary}	
+\begin{itemize}	
+\itemt \( (V)_b = [U^\dagger]_a (V)_a \)				
+\itemt \( [U]_a = [(b_0)_a(b_1)_a ... (b_n)_a] \)				
+\end{itemize}				
+
+\subsection{Commutator}		
+\begin{itemize}
+\itemt \( [A,B] = AB - BA \)
+\itemt \( [A,A] = 0 \)
+\itemt \( [A+B,C] = [A,C]+[B,C] \)
+\itemt \( [A,BC] = [A,B]C+B[A,C] \)
+\end{itemize}			
+
+
+\subsection{Anticommutator}
+\begin{itemize}
+\itemt \( \{A,B\} = AB + BA \)
+\end{itemize}			
+
+
+\subsection{Cauchy-Schwarz Inequality}
+\begin{itemize}
+\itemt \( |\langle \vec{u},\vec{v} \rangle|^2 \leq \langle \vec{u},\vec{u} \rangle \cdot \langle \vec{v},\vec{v} \rangle \)
+\end{itemize}
+
+
+
+	\section{Geometry}
+
+
+		\subsection{Pythagorean theorem}
+\begin{itemize}
+\itemt \( a^2 + b^2 = c^2 \)
+\itemt \( a = \sqrt{b^2 + c^2} \)
+\end{itemize}
+
+\subsubsection{Higher dimensions}
+\begin{itemize}
+\itemt \( r = \sqrt{x^2 + y^2 +z^2} \)
+\itemt \( r = \sqrt{x_1^2 + x_2^2 + \cdots + x_n^2} = \sqrt{\vec{r}\cdot\vec{r}} \)
+\end{itemize}
+
+\subsubsection{Distance between two points}
+\begin{itemize}
+\item[In two dimensions]
+\itemt \( d_{12} = \sqrt[]{(x_2-x_1)^2 + (y_2-y_1)^2} \)
+\item[In higher dimensions]
+\itemt \( d_{ab} = \sqrt[]{(b_1-a_1)^2 + (b_2-a_2)^2 + \cdots + (b_n - a_n)^2} \)
+\end{itemize}
+            
+
+
+\def\arraystretch{1.5}
+
+		\subsection{Properties of shapes}
+\begin{tabular}{|l|l|l|}
+\hline
+				& \textbf{Area} 		& \textbf{Circumference}
+\\ \hline 
+\textbf{Circle}	& \( \pi R^2 \)			& \( 2 \pi R \)
+\\ \hline
+\textbf{Square} & \( L^2	\)			& \( 4L \)
+\\ \hline
+\end{tabular}
+
+		\subsection{Properties of solids}
+\begin{tabular}{|l|l|l|}
+\hline
+				& \textbf{Surface Area} & \textbf{Volume}
+\\ \hline 
+\textbf{Sphere}	& \( 4\pi R^2 \)		& \( \frac{4}{3} \pi R^3 \)
+\\ \hline
+\end{tabular}
+
+		\subsection{Circular formulae}
+
+\subsubsection{Arc length}
+\begin{itemize}
+\itemt \( l = R\theta \)
+\end{itemize}
+
+\subsubsection{Area of a sector}
+\begin{itemize}
+\itemt \( A = \dfrac{R^2\theta}{2} \)
+\end{itemize}
+
+\subsubsection{Area of a segment}
+\begin{itemize}
+\itemt \( A = \dfrac{R^2}{2} (\theta - \sin\theta) \)
+\end{itemize}
+
+		
+        \subsection{Useful Functions}
+        
+\subsubsection{Parabola}
+\begin{itemize}
+\itemt \( f(x) = a(x-h)^2 + k \)
+\itemt Vertex at \( (h,k) \)
+\itemt Up-concave if $a>0$; down-concave if $a<0$
+\item[]
+\itemt \( f(x) = ax^2 + bx + c \)
+\itemt Vertex at \( (-\dfrac{b}{2a}, f(-\dfrac{b}{2a})) \)
+\itemt Up-concave if $a>0$; down-concave if $a<0$
+\end{itemize}
+
+\subsubsection{Hyperbola}
+\begin{itemize}
+\itemt \( (\dfrac{x-h}{a})^2 - (\dfrac{y-k}{b})^2 = 1\)
+\itemt Centre at $(h,k)$
+\itemt Asymptotes through centre, slope $\pm\dfrac{b}{a}$
+\end{itemize}
+
+\subsubsection{Circle}
+\begin{itemize}
+\itemt \( (x-h)^2 + (y-k)^2 = R^2\)
+\itemt Centre at $(h,k)$
+\end{itemize}
+
+\subsubsection{Ellipse}
+\begin{itemize}
+\itemt \(1 = (\dfrac{x-h}{a})^2 + (\dfrac{y-k}{b})^2\)
+\itemt Centre at $(h,k)$
+\itemt Vertices a units right/left from the centre and vertices b units up/down from the center.
+\end{itemize}	
+
+\subsubsection{Sphere}
+\begin{itemize}
+\itemt \(R^2 = (x-h)^2 + (y-k)^2 + (z-l)^2\)    
+\itemt Centre at $(h,k,l)$:
+\end{itemize}
+
+\subsubsection{Ball}
+\begin{itemize}
+\itemt \(R^2 < (x-h)^2 + (y-k)^2 + (z-l)^2\)  
+\itemt Centre at $(h,k,l)$:
+\end{itemize}				
+
+
+
+\subsection{Coordinates}
+
+\subsubsection{Transformations to Cartesian coordinates}
+\def\arraystretch{2.5}
+\begin{tabular}{ |l|l|l|l|l| } 
+\hline
+\textbf{Cartesian}				& \(x = x\)						&\(y = y\)						&\(z=z\)				& \(dV = dx\ dy\ dz\)
+\\ \hline
+\textbf{Polar (2D)}					&\(x = r \cos\phi	\)		&\(y = r\sin\phi\) & N/A & \(dA = r\ dr d\phi\)
+\\ \hline
+\textbf{Cylindrical}			&\(x = r \cos\phi	\)			&\(y = r\sin\phi\)  			&\(z=z\)				& \(dV = r\ dr\ d\theta\ dz\)
+\\ \hline
+\textbf{Spherical}				&\(x = r\sin\theta\cos\phi\)	&\(y = r\sin\theta\sin\phi\)	&\(z = r\cos\theta\)	& \(dV = r^2 \sin\theta\ dr\ d\theta\ d\phi \)
+\\ \hline
+\end{tabular}
+
+\subsubsection{Transformations from Cartesian coordinates}
+\begin{tabular}{ |l|l|l|l| } 
+\hline
+\textbf{Cartesian}				& \(x = x\)						&\(y = y\)				&\(z=z\)
+\\ \hline
+\textbf{Polar (2D)}					&\(r = \sqrt{x^2 + y^2}	\)		&\(\phi'= \arctan| \dfrac{y}{x} |\)\tab($\phi$ depends on quadrant) & N/A
+\\ \hline
+\textbf{Cylindrical}			&\(r=\sqrt{x^2 + y^2}\)			&\(\phi'= \arctan| \dfrac{y}{x}|\)\tab($\phi$ depends on quadrant) 				&\(z=z\)
+\\ \hline
+\textbf{Spherical}				&\(r=\sqrt{x^2 + y^2 + z^2}\)	&\(\phi'= \arctan| \dfrac{y}{x}|\)\tab($\phi$ depends on quadrant)				&\(\theta = \arccos(\dfrac{z}{\sqrt{x^2+y^2+z^2}})\)
+\\ \hline
+\end{tabular}		
+
+
+\subsection{Hyperbolic Functions}
+
+\subsubsection{Hyberbolic Sine}
+\begin{itemize}
+\itemt \( \sinh x = \dfrac{e^x - e^{-x}}{2} = \dfrac{e^{2x}-1}{2e^x} = \dfrac{1-e^{-2x}}{2e^{-x}} \)
+\itemt \( \sinh x = -i\sin(ix) \)
+\end{itemize}			
+
+\subsubsection{Hyperbolic Cosine}			
+\begin{itemize}
+\itemt \( \cosh x = \dfrac{e^x + e^{-x}}{2} = \dfrac{e^{2x}+1}{2e^x} = \dfrac{1+e^{-2x}}{2e^{-x}} \)
+\itemt \( \cosh x = \cos(ix) \)
+\end{itemize}
+
+\subsubsection{Hyperbolic Tangent}			
+\begin{itemize}
+\itemt \( \tanh x = \dfrac{\sinh x}{\cosh x} = \dfrac{e^x - e^{-x}}{e^x + e^{-x}} =  \dfrac{e^{2x}-1}{e^{2x}+1} = \dfrac{1-e^{-2x}}{1+e^{-2x}} \)
+\itemt \( \tanh x = -i\tan(ix) \)
+\end{itemize}
+
+\subsubsection{Hyperbolic Cotangent}			
+\begin{itemize}
+\itemt \( \coth x = \dfrac{1}{\tanh x} = \dfrac{\cosh x}{\sinh x} = \dfrac{e^x + e^{-x}}{e^x - e^{-x}} =  \dfrac{e^{2x}+1}{e^{2x}-1} = \dfrac{1+e^{-2x}}{1-e^{-2x}} \)
+\itemt \( \coth x = i\cot(ix) \)
+\end{itemize}
+
+\subsubsection{Hyperbolic Secant}			
+\begin{itemize}
+\itemt sech\(x = \dfrac{1}{\cosh x} = \dfrac{2}{e^x + e^{-x}} = \dfrac{2e^x}{e^{2x}+1} = \dfrac{2e^{-x}}{1+e^{-2x}} \)
+\itemt sech\(x = \sec(ix) \)
+\end{itemize}
+
+\subsubsection{Hyperbolic Cosecant}	
+\begin{itemize}
+\itemt csch\(x = \dfrac{1}{\sinh x} = \dfrac{2}{e^x - e^{-x}} = \dfrac{2e^x}{e^{2x}-1} = \dfrac{2e^{-x}}{1-e^{-2x}} \)
+\itemt csch\(x = i\csc(ix) \)
+\end{itemize}				
+
+\subsubsection{Identities}			
+\begin{itemize}
+\itemt \( \cosh^2x - \sinh^2x = 1 \)
+\itemt \( \sin\theta \cos\theta = \frac{1}{2}\sin(2\theta) \)
+\end{itemize}
+			
+
+	\section{Trigonometry}
+
+
+\subsubsection{Definitions}
+\begin{itemize}
+\itemt SOH CAH TOA
+\itemt \( \sin\theta = \dfrac{opposite}{hypotenuse} \)
+\itemt \( \cos\theta = \dfrac{adjacent}{hypotenuse} \)
+\itemt \( \tan\theta = \dfrac{opposite}{adjacent} = \dfrac{\sin\theta}{\cos\theta} \)
+\itemt \( \cot\theta = \dfrac{adjacent}{opposite} = \dfrac{\cos\theta}{\sin\theta} \)
+\itemt \( \sec\theta = \dfrac{hypotenuse}{adjacent} \)
+\itemt \( \csc\theta = \dfrac{hypotenuse}{opposite} \)
+\end{itemize}
+
+\subsection{Identities}
+
+\subsubsection{Pythagorean Identities}
+\begin{itemize}
+\itemt \( \cos^2\theta+\sin^2\theta = 1 \)
+\itemt \( \tan^2\theta + 1 \sec^2 \theta \)
+\itemt \( 1 + \cot^2 \theta = \csc^2 \theta \)
+
+\end{itemize}
+
+\subsubsection{Reciprocals}
+\begin{itemize}
+\itemt \( \sin\theta = \dfrac{1}{\csc\theta} \)
+\itemt \( \cos\theta = \dfrac{1}{\sec\theta} \)
+\itemt \( \tan\theta = \dfrac{1}{\cot\theta} \)
+\itemt \( \cot\theta = \dfrac{1}{\tan\theta} \)
+\itemt \( \sec\theta = \dfrac{1}{\cos\theta} \)
+\itemt \( \csc\theta = \dfrac{1}{\sin\theta} \)
+\end{itemize}
+
+\subsubsection{As complex exponentials}
+\begin{itemize}
+\itemt \( \sin\theta = \dfrac{e^{ix} - e^{-ix}}{2i} \)
+\itemt \( \cos\theta = \dfrac{e^{ix} + e^{-ix}}{2} \)
+\itemt \( \tan\theta = \dfrac{e^{ix} - e^{-ix}}{i(e^{ix} + e^{-ix})} \)
+\itemt \( \cot\theta = \dfrac{i(e^{ix} + e^{-ix})}{e^{ix} - e^{-ix}} \)
+\itemt \( \sec\theta = \dfrac{2}{e^{ix} + e^{-ix}} \)
+\itemt \( \csc\theta = \dfrac{2i}{e^{ix} - e^{-ix}} \)
+\end{itemize}
+
+\subsubsection{Symmetries}
+\begin{itemize}
+\itemt \( \sin(-\theta) = -\sin\theta \)
+\itemt \( \cos(-\theta) = \cos\theta \)
+\itemt \( \tan(-\theta) = -\tan\theta \)
+\itemt \( \csc(-\theta) = -\csc\theta \)
+\itemt \( \sec(-\theta) = \sec\theta \)
+\itemt \( \cot(-\theta) = -\cot\theta \)
+\item[]
+\itemt \( \sin(\dfrac{\pi}{2} - \theta) = \cos\theta \)
+\itemt \( \cos(\dfrac{\pi}{2} - \theta) = \sin\theta \)
+\itemt \( \tan(\dfrac{\pi}{2} - \theta) = \cot\theta \)
+\itemt \( \csc(\dfrac{\pi}{2} - \theta) = \sec\theta \)
+\itemt \( \sec(\dfrac{\pi}{2} - \theta) = \csc\theta \)
+\itemt \( \cot(\dfrac{\pi}{2} - \theta) = \tan\theta \)
+\item[]
+\itemt \( \sin(\pi - \theta) = \sin\theta \)
+\itemt \( \cos(\pi - \theta) = -\cos\theta \)
+\itemt \( \tan(\pi - \theta) = -\tan\theta \)
+\itemt \( \csc(\pi - \theta) = \csc\theta \)
+\itemt \( \sec(\pi - \theta) = -\sec\theta \)
+\itemt \( \cot(\pi - \theta) = -\cot\theta \)
+\end{itemize}
+
+\subsubsection{Angle sum and difference formulae}
+\begin{itemize}
+\itemt \( \sin(\alpha \pm \beta) = \sin \alpha\cos \beta \pm \cos \alpha\sin \beta \)
+\itemt \( \cos(\alpha \pm \beta) = \cos \alpha\cos \beta \mp \sin \alpha \sin \beta \)
+\itemt \( \tan(\alpha \pm \beta) = \dfrac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta}\)
+\end{itemize}
+
+\subsubsection{Half-angle formulae}
+\begin{itemize}
+\itemt \( \sin^2(\dfrac{\theta}{2}) = \dfrac{1-\cos\theta}{2} \)
+\itemt \( \cos^2(\dfrac{\theta}{2}) = \dfrac{1+\cos\theta}{2} \)
+\itemt \( \tan^2(\dfrac{\theta}{2}) = \dfrac{1-\cos\theta}{1+\cos\theta} \)
+\itemt \( \tan(\dfrac{\theta}{2}) = \dfrac{\tan\theta}{1+\sec\theta} = \dfrac{\sin\theta}{1+\cos\theta} = \dfrac{1 - \cos\theta}{\sin\theta} = \csc\theta - \cot\theta\)
+\end{itemize}
+
+\subsubsection{Double-angle formulae}
+\begin{itemize}
+\itemt \( \cos(2\theta) = 2\cos^2 \theta - 1 = 1 - 2\sin^2 \theta = \cos^2\theta - \sin^2 \theta \)
+\itemt \( \sin(2\theta) = 2\sin \theta \cos \theta \)
+\itemt \( \tan(2\theta) = \dfrac{2\tan \theta}{1-\tan^2 \theta} \)
+\end{itemize}
+
+\subsubsection{Sum to Product}
+\begin{itemize}
+\itemt \( \sin \alpha + \sin \beta = 2\sin(\dfrac{\alpha+\beta}{2})\cos(\frac{\alpha-\beta}{2}) \)
+\itemt \( \sin \alpha - \sin \beta = 2\cos(\dfrac{\alpha+\beta}{2})\sin(\frac{\alpha-\beta}{2}) \)
+\itemt \( \cos \alpha + \cos \beta = 2\cos(\dfrac{\alpha+\beta}{2})\cos(\frac{\alpha-\beta}{2}) \)
+\itemt \( \cos \alpha - \cos \beta = -2\sin(\dfrac{\alpha+\beta}{2})\sin(\frac{\alpha-\beta}{2}) \)
+\end{itemize}
+
+\subsubsection{Product to Sum}
+\begin{itemize}
+\itemt \( \sin \alpha \sin \beta = \frac{1}{2} [\cos(\alpha-\beta)-\cos(\alpha+\beta)] \)
+\itemt \( \cos \alpha \cos \beta = \frac{1}{2} [\cos(\alpha-\beta)+\cos(\alpha+\beta)] \)
+\itemt \( \sin \alpha \cos \beta = \frac{1}{2} [\sin(\alpha+\beta)+\cos(\alpha-\beta)] \)
+\itemt \( \cos \alpha \sin \beta = \frac{1}{2} [\sin(\alpha+\beta)-\sin(\alpha-\beta)] \)
+\end{itemize}
+
+\subsubsection{Law of Sines}
+\begin{itemize}
+\itemt \( \dfrac{\sin\alpha}{a} = \dfrac{\sin\beta}{b} = \dfrac{\sin\gamma}{c} \)
+\end{itemize}
+
+\subsubsection{Law of Cosines}
+\begin{itemize}
+\itemt \( a^2 = b^2 + c^2 - 2bc\cos\alpha \)
+\itemt \( b^2 = a^2 + c^2 - 2ac\cos\beta \)
+\itemt \( c^2 = a^2 + b^2 - 2ab\cos\gamma \)
+\end{itemize}
+
+\subsubsection{Law of Tangents}
+\begin{itemize}
+\itemt \( \dfrac{a-b}{a+b} = \dfrac{\tan(\frac{1}{2}[\alpha-\beta])}{\tan(\frac{1}{2}[\alpha+\beta])} \)
+\itemt \( \dfrac{b-c}{b+c} = \dfrac{\tan(\frac{1}{2}[\beta-\gamma])}{\tan(\frac{1}{2}[\beta+\gamma])} \)
+\itemt \( \dfrac{a-c}{a+c} = \dfrac{\tan(\frac{1}{2}[\alpha-\gamma])}{\tan(\frac{1}{2}[\alpha+\gamma])} \)
+\end{itemize}
+
+\subsubsection{Mollweide's Formula}
+\begin{itemize}
+\itemt \( \dfrac{a+b}{c} = \dfrac{\cos(\frac{1}{2}[\alpha-\beta])}{\sin(\frac{1}{2}\gamma)} \)
+\end{itemize}
+
+\subsubsection{Small-angle approximations}
+\begin{itemize}
+\itemt \( \sin\theta \approx \theta \)
+\itemt \( \cos\theta \approx 1 - \dfrac{\theta^2}{2} \)
+\itemt \( \tan\theta \approx \theta \)
+\end{itemize}
+
+\subsubsection{Other identities}
+\begin{itemize}
+\itemt \( \sin \theta \cos \theta = \frac{1}{2} \sin(2\theta) \)
+\itemt \( \cos^2\theta = \frac{1}{2} (\cos(2\theta)+1) \)
+\end{itemize}
+
+\subsubsection{Averages}
+\begin{itemize}
+\itemt \( \bar{\sin x} = \bar{\cos x} = 0 \)
+\itemt \( \bar{\sin^2x} = \bar{\cos^2x}= \frac{1}{2} \)
+\end{itemize}
+
+\def\arraystretch{2.8}
+\subsubsection{Table of Identities}
+\begin{tabular}{ |l|l|l|l|l|l|l|l| } 
+\hline
+In terms of...			& $\mathbf{\sin\theta}$								& $\mathbf{\cos\theta}$										& $\mathbf{\tan\theta}$								& $\mathbf{\sec\theta}$									& $\mathbf{\cot\theta}$								& $\mathbf{\csc\theta}$ 
+\\ \hline
+
+$\mathbf{\sin\theta}=$	& $\sin\theta$										& $\pm\sqrt{1-\cos^2\theta}$ 								& $\pm\dfrac{\tan\theta}{\sqrt[]{1+\tan^2\theta}}$	& $\pm\dfrac{\sqrt[]{\sec^2\theta-1}}{\sec\theta}$		& $\pm\dfrac{1}{\sqrt[]{1+\cot^2\theta}}$			& $\dfrac{1}{\csc}$
+\\\hline
+
+$\mathbf{\cos\theta}=$	& $\pm\sqrt[]{1-\sin^2\theta}$ 						& $\cos\theta$ 												& $\pm\dfrac{1}{\sqrt[]{1+\tan^2\theta}}$ 			& $\dfrac{1}{\sec\theta}$ 								& $\pm\dfrac{\cot\theta}{\sqrt[]{1+\cot^2\theta}}$ 	& $\pm\dfrac{\sqrt[]{\csc^2-1}}{\csc\theta}$
+\\\hline
+
+$\mathbf{\tan\theta}=$	& $\pm\dfrac{\sin\theta}{\sqrt[]{1-\sin^2\theta}}$ 	& $\pm\dfrac{\sqrt[]{1-\cos^2\theta}}{\cos\theta}$ 			& $\tan\theta$ 										& $\pm\sqrt[]{\sec^2\theta-1}$ 							& $\dfrac{1}{\cot\theta}$ 							& $\pm\dfrac{1}{\sqrt{\csc^2\theta-1}}$
+\\\hline
+
+$\mathbf{\sec\theta}=$	& $\pm\dfrac{1}{\sqrt[]{1-\sin^2\theta}}$ 			& $\dfrac{1}{\cos\theta}$ 									& $\pm\sqrt[]{1+\tan^2\theta}$ 						& $\sec\theta$ 											& $\pm\dfrac{\sqrt[]{1+\cot^2\theta}}{\cot\theta}$ 	& $\pm\dfrac{\csc\theta}{\sqrt[]{\csc^2-1}}$
+\\\hline
+
+$\mathbf{\cot\theta}=$	& $\pm\dfrac{\sqrt[]{1-\sin^2\theta}}{\sin\theta}$ 	& $\pm\dfrac{\cos\theta}{\pm\sqrt[]{1-\cos^2\theta}}$ 		& $\dfrac{1}{\tan\theta}$ 							& $\pm\dfrac{1}{\sqrt[]{\sec^2\theta-1}}$ 				& $\cot\theta$ 										& $\pm\sqrt{\csc^2\theta-1}$
+\\\hline
+
+$\mathbf{\csc\theta}=$	& $\dfrac{1}{\sin\theta}$ 							& $\pm\dfrac{1}{\sqrt{1-\cos^2\theta}}$						& $\pm\dfrac{\sqrt[]{1+\tan^2\theta}}{\tan\theta}$	& $\pm\dfrac{\sec\theta}{\sqrt[]{\sec^2\theta-1}}$		& $\pm\sqrt[]{1+\cot^2\theta}$						& $\csc$
+\\\hline
+\end{tabular}
+
+	\section{Calculus}
+
+
+
+		\subsection{Limits}
+
+		\subsection{Properties}
+\begin{itemize}
+\itemt \( \lim\limits_{x\to a} cf(x) = c\lim\limits_{x\to a} f(x) \)
+\itemt \( \lim\limits_{x\to a} [f(x) \pm g(x)] = \lim\limits_{x\to a} f(x) \pm \lim\limits_{x\to a} g(x) \)
+\itemt \( \lim\limits_{x\to a} [f(x) g(x)] = \lim\limits_{x\to a} f(x)  \lim\limits_{x\to a} g(x) \)
+\itemt \( \lim\limits_{x\to a} \dfrac{f(x)}{g(x)} = \dfrac{\lim\limits_{x\to a} f(x)}{\lim\limits_{x\to a} g(x)}, \tab[0.5cm] \lim\limits_{x\to a} g(x) \neq 0 \)
+\itemt \( \lim\limits_{x\to a} [f(x)]^n = [\lim\limits_{x\to a} f(x)]^n \)
+\end{itemize}
+
+\subsubsection{Useful Limits}
+\begin{itemize}
+\itemt \( \lim\limits_{x\to \infty} e^x = \infty \)
+\itemt \( \lim\limits_{x\to -\infty} e^x = 0 \)
+\itemt \( \lim\limits_{x\to \infty} \ln(x) = \infty \)
+\itemt \( \lim\limits_{x\to 0^-} \ln(x) = -\infty \)
+\itemt \( \lim\limits_{x\to 0} x\log x = 0 \)
+\end{itemize}
+
+\subsubsection{L'H\^opital's rule}
+\begin{itemize}
+\itemt \( \lim\limits_{x\to a} \dfrac{f(x)}{g(x)} = \lim\limits_{x\to a} \dfrac{f'(x)}{g'(x)}  \)
+\end{itemize}
+
+\subsubsection{Squeeze principle}
+\begin{itemize}
+\itemt For \( g(x) \leq f(x) \leq h(x) \) and \( \lim\limits_{x\to a} g(x) = \lim\limits_{x\to a} h(x) = L\):
+\subitem\tab \( \lim\limits_{x\to a} f(x) = L \)
+\end{itemize}
+
+		\subsection{Differentiation}
+
+\subsubsection{First Principles}
+
+\begin{itemize}
+\itemt \( \dd{}{x} f(x) = \lim\limits_{h\to0} \dfrac{f(x+h)-f(x)}{h} \)
+\end{itemize}
+
+\subsubsection{Nature of derivatives}
+
+\def\arraystretch{1.5}
+
+\begin{minipage}{.5\linewidth}
+\begin{tabular}{ |l|l|l| } 
+\hline
+\textbf{Derivative}		& \textbf{Function}
+\\ \hline
+$f'x > 0$				& Increasing
+\\ \hline
+$f'x = 0$				& Stationary
+\\ \hline
+$f'x < 0$				& Decreasing
+\\ \hline
+\end{tabular}
+\begin{tabular}{ |l|l|l| } 
+\hline
+\textbf{Second Derivative}		& \textbf{Function}	& \textbf{Stationary Points [$f'x=0$]}
+\\ \hline
+$f''x > 0$					& Concave up		& Local Minimum
+\\ \hline
+$f'x = 0$						& No information	& Inflection Point
+\\ \hline
+$f''x < 0$						& Concave down		& Local Maximum
+\\ \hline
+\end{tabular}
+\end{minipage}
+
+\subsubsection{Product Rule}
+\begin{itemize}
+\itemt \( (uv)' = uv' + vu' \)
+\itemt \( \dd{}{x} f(x)gx = f(x)g'(x)+f'(x)g(x) \)
+\end{itemize}
+
+\subsubsection{Quotient Rule}
+\begin{itemize}
+\itemt \( (\dfrac{u}{v})' = \dfrac{vu'-uv'}{v^2} \)
+\itemt \( \dd{}{x} \dfrac{f(x)}{g(x)} = \dfrac{g(x)f'(x)-f(x)g'(x)}{g(x)^2} \)
+\end{itemize}
+
+\subsubsection{Chain Rule}
+\begin{itemize}
+\itemt \( \dd{y}{x} = \dd{y}{u} \dd{u}{x}\)
+\itemt \( \dd{}{x} f(g(x)) = f'(g(x)) g'(x) \)
+\end{itemize}
+
+\subsubsection{Useful Derivatives}
+
+\begin{itemize}
+\itemt \( \dd{}{x} x^n = nx^{n-1} \)
+\itemt \( \dd{}{x} a^x = a^x \ln(a) \)
+\itemt \( \dd{}{x} e^x = e^x \)
+\itemt \( \dd{}{x} \ln x = \dfrac{1}{x},\ x>0 \)
+\itemt \( \dd{}{x} \ln |x| = \dfrac{1}{x},\ x\neq 0 \)
+\itemt \( \dd{}{x} \ln(f(x)) = \dfrac{f'x}{f(x)} \)
+\itemt \( \dd{}{x} \log_bx = \dfrac{1}{x \ln(b)},\ x>0 \)
+\itemt \( \dd{}{x} \sin x = \cos x \)
+\itemt \( \dd{}{x} \cos x = -\sin x \)
+\itemt \( \dd{}{x} \tan x = \sec^2x \)
+\itemt \( \dd{}{x} \sec x = \sec x \tan x \)
+\itemt \( \dd{}{x} \csc x = -\csc x \cot x \)
+\itemt \( \dd{}{x} \cot x = -\csc^2 x \)
+\itemt \( \dd{}{x} \sin^{-1} x = \dfrac{1}{\sqrt[]{1-x^2}} \)
+\itemt \( \dd{}{x} \cos^{-1} x = \dfrac{1}{-\sqrt[]{1-x^2}} \)
+\itemt \( \dd{}{x} \tan^{-1} x = \dfrac{1}{-\sqrt[]{1+x^2}} \)
+\end{itemize}
+
+
+
+		\subsection{Partial Differentiation}
+
+\subsubsection{First Principles}
+\begin{itemize}
+\itemt \( \pp{}{x} f(x,y) = \lim\limits_{h\to0} \dfrac{f(x+h,y)-f(x,y)}{h} \)
+\end{itemize}
+
+\subsubsection{Jacobian Matrix}
+\def\arraystretch{2.5}
+\begin{itemize}
+\itemt \( D\vec{f}(\vec{a}) = 
+\begin{bmatrix}
+\pp{f_1}{x_1}(\vec{a})	& \pp{f_1}{x_2}(\vec{a})	& \cdots 	& \pp{f_1}{x_n}(\vec{a}) \\
+\pp{f_2}{x_1}(\vec{a})	& \pp{f_2}{x_2}(\vec{a})	& \cdots 	& \pp{f_2}{x_n}(\vec{a}) \\
+\vdots						& \vdots					& \ddots	& \vdots \\
+\pp{f_m}{x_1}(\vec{a})	& \pp{f_m}{x_2}(\vec{a})	 & \cdots 	& \pp{f_m}{x_n}(\vec{a}) \\
+\end{bmatrix}
+\)
+\end{itemize}
+
+\subsubsection{Definition of differentiability of a multivariable function}
+\begin{itemize}
+\itemt \( \lim\limits_{\vec{x}\to\vec{a}} = \dfrac{||f(\vec{x})-f(\vec{a}) - Df(\vec{a})\cdot(\vec{x}-\vec{a})||}{||\vec{x}-\vec{a}||} = 0\)
+\end{itemize}
+
+
+		\subsection{The Differential}
+\begin{itemize}
+\itemt \( \dn F = \dfrac{\partial F}{\partial x}\dn x + \dfrac{\partial F}{\partial y}\dn y + \dfrac{\partial F}{\partial z}\dn z \)
+\end{itemize}
+
+
+		\subsection{Line Element}
+\begin{itemize}
+\itemt \( \dn S^2 = \dn x^2 + \dn y^2 + \dn z^2 \)
+\end{itemize}	
+
+
+		\subsection{Integration}
+
+\subsubsection{Properties}
+\begin{itemize}
+\itemt \( \int f(x) \pm g(x) \dn x = ( \int f(x)\dn x \int \pm g(x) \dn x \)
+\itemt \( \int\limits_a^a f(x) \dn x = 0 \)
+\itemt \( \int\limits_a^b f(x) \dn x = -\int\limits_b^a f(x) \dn x \)
+\itemt \( |\int\limits_a^b f(x) \dn x| \leq \int\limits_a^b |f(x)| \dn x \)
+\itemt If \( f(x) \geq g(x) \) over $[a,b]$, \( \int\limits_a^b f(x) \dn x \geq \int\limits_b^a g(x) \dn x \)
+\itemt If \( f(x) \geq 0 \) over $[a,b]$, \( \int\limits_a^b f(x) \dn x > 0 \)
+\itemt If \( m\leq f(x) \leq M \) over $[a,b]$, \( m(b-a) \leq \int\limits_a^b f(x) \dn x \leq M(b-a) \)
+\end{itemize}
+
+\subsubsection{Integration by Parts}			
+\begin{itemize}
+\itemt \( \int u'v = uv - \int uv' \)
+\itemt \( \int f'(x)g(x) \dn x = f(x)g(x) - \int f(x)g'(x) \dn x \)				
+\itemt \( \int\limits_a^b f'(x)g(x) \dn x = [f(x)g(x)]^b_a - \int\limits_a^b f(x)g'(x) \dn x \)
+\end{itemize}	
+
+\subsubsection{Integration by Substitution}
+\begin{itemize}
+\itemt \( u = g(x);\ \dn x = g'(x) \dn x;\ \int\limits_a^b f(g(x))g'(x) \dn x = \int\limits_{g(a)}^{g(b)} f(x) \dn x\)
+\end{itemize}
+
+\subsubsection{Approximations}
+\textit{Trapezoid rule}
+\begin{itemize}
+\itemt \( \int\limits_a^b f(x) \dn x \approx \dfrac{\Delta x}{2} [f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)] \)
+\end{itemize}
+\textit{Simpson's rule}
+\begin{itemize}
+\itemt \( \int\limits_a^b f(x) \dn x \approx \dfrac{\Delta x}{3} [f(x_0) + 4f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n)] \)
+\end{itemize}
+
+\subsubsection{Useful Indefinite Integrals}
+\begin{itemize}
+\itemt \( \int k \dn x = kx + C \)
+\itemt \( \int \log_bx \dn x = x(\log_bx - \log_b(e)) + C = x(\log_bx - \dfrac{1}{\ln{b}}) + C \)
+\itemt \( \int \ln x \dn x = x(\ln x-1) + C \)
+\itemt \( \int e^x \dn x = e^x + C \)
+\itemt \( \int x^n \dn x = \dfrac{x^{n+1}}{n+1} + C,\ n \neq -1 \)
+\itemt \( \int \dfrac{1}{x} \dn x = \ln |x| + C \)
+\itemt \( \int \dfrac{1}{ax+b} \dn x = \dfrac{1}{a}\ln |ax+b| + C \)
+\itemt \( \int \sin x \dn x = -\cos x + C \)
+\itemt \( \int \cos x \dn x = \sin x + C \)
+\itemt \( \int \tan x \dn x = \ln |\sec x| + C \)
+\itemt \( \int \sec x \dn x = \ln |\sec x + \tan x| + C \)
+\itemt \( \int \sec^2 x \dn x = \tan x + C \)
+\itemt \( \int \csc^2 x \dn x = -\cot x + C \)
+\itemt \( \int \sec x \tan x \dn x = \sec x + C \)
+\itemt \( \int \csc x \cot x \dn x = -\csc x + C \)
+\itemt \( \int \dfrac{1}{a^2 + x^2} \dn x = \dfrac{1}{a} \tan^{-1}(\dfrac{x}{a}) +C \)
+\itemt \( \int \dfrac{1}{\sqrt{a^2 + x^2}} \dn x = \sin^{-1}(\dfrac{x}{a}) +C \)
+\end{itemize}
+
+\subsubsection{Useful Definite Integrals}
+\begin{itemize}
+\itemt \( \int\limits^\infty_0 \dfrac{x^3}{e^x -1} \dn x = \dfrac{\pi^4}{15} \)
+\itemt \( \int\limits^\infty_0 x^n e^{-ax} \dn x = \dfrac{n!}{a^{n+1}} \)
+\end{itemize}
+
+		\subsection{Differential Equations}
+
+\subsubsection{Wronskian}
+\def \arraystretch{1.4}
+\begin{itemize}
+\itemt \( W(f,g) = f(x)g'(x) - g(x)f'(x) \)
+\itemt \( W(f_1, f_2, \ldots , f_n) = 
+\begin{vmatrix}
+f_1(x)			& f_2(x)		& \cdots	& f_n(x) \\
+f'_1(x)			& f'_2(x)		& \cdots	& f'_n(x) \\
+\vdots			& \vdots		& \ddots	& \vdots \\
+f^{(n-1)}_1(x)	& f^{(n-1)}_2(x)& \cdots	& f^{(n-1)}_n(x)
+\end{vmatrix} \)
+\end{itemize}
+
+\subsubsection{1-Dimensional Green's Functions}
+\begin{itemize}
+\itemt \(  a_2(x)y''(x) + a_1(x)y'(x) + a_0(x)y(x) = f(x) \).
+\itemt \( y(x) = \int\limits^\infty_{-\infty} G(x,z) f(z) \dn z \)
+\itemt \( y_1(x),\ y_2(x) \) are linearly independent solutions to the equation.
+\end{itemize}
+
+\textit{Given initial conditions}
+\def \arraystretch{1.4}
+\begin{itemize}
+\itemt \( W(z) = 
+\begin{vmatrix}
+y_1(z)	&	y_2(z)	\\
+y'_1(z)	&	y'_2(z)	\\
+\end{vmatrix} = y_1 y'_2 - y_2 y'_1 \)
+\itemt \( G(x,z) = 
+\begin{cases}
+0;									& z>x>0 \\
+\dfrac{y_1(z)y_2(x)}{a_2(z)W(z)} - \dfrac{y_1(x)y_2(z)}{a_2(z)W(z)};	& x>z>0 \\
+\end{cases}\)
+\itemt \( y(x) = \int\limits^x_0 [\dfrac{y_1(z)y_2(x)}{a_2(z)W(z)} - \dfrac{y_1(x)y_2(z)}{a_2(z)W(z)}]\ f(z) \dn z \)
+\end{itemize}
+
+\textit{Given homogeneous boundary conditions}
+\def \arraystretch{1.4}
+\begin{itemize}
+\itemt \( W_{ab}(z) = 
+\begin{vmatrix}
+y_a(z)	&	y_b(z)	\\
+y'_a(z)	&	y'_b(z)	\\
+\end{vmatrix} = y_a y'_b - y_b y'_a = (\alpha - \beta) W(z)  \)
+\itemt \( G(x,z) = 
+\begin{cases}
+\dfrac{y_a(x)y_b(z)}{a_2(z)W_{ab}(z)};	& a<x<z<b \\
+\\
+\dfrac{y_a(z)y_b(x)}{a_2(z)W_{ab}(z)};	& a<z<x<b \\
+\end{cases}\)
+\itemt \( y(x) = \int\limits^x_a \dfrac{y_a(z)y_b(x)}{a_2(z)W_{ab}(z)} f(z) \dn z + \int\limits^b_x \dfrac{y_a(x)y_b(z)}{a_2(z)W_{ab}(z)} f(z) \dn z \)
+\end{itemize}
+        
+\subsection{Vector Calculus}
+
+\subsubsection{Vector derivative}
+\begin{itemize}
+\itemt \( \mathrm{grad} (f) = \vec{\nabla} f = 
+\begin{bmatrix}
+\pp{f}{x} 	\\
+\pp{f}{y} 	\\
+\pp{f}{z} 	\\
+\end{bmatrix}
+\) = \( \pp{f}{x} \hat{x} + \pp{f}{y} \hat{y} + \pp{f}{z} \hat{z}\)
+\itemt \( \int\limits_a^b (\vec{\nabla}f)\cdot \dn \vec{l} = f(a) - f(b)\)
+\end{itemize}
+
+\subsubsection{The Laplacian}
+\begin{itemize}
+\itemt \( \delta f = \nabla^2 f = \pp{^2f}{x^2} + \pp{^2f}{y^2} + \pp{^2f}{z^2}\)
+\end{itemize}
+
+\subsubsection{Divergence}
+
+
+\textit{In Cartesian Coordinates}
+\begin{itemize}
+\itemt div($f$) \( = \divergence{\vec{f}} = \pp{f_x}{x} + \pp{f_y}{y} + \pp{f_z}{z} \)
+\end{itemize}
+
+\textit{In Cylindrical Coordinates}
+\begin{itemize}
+\itemt\( \divergence{\vec{f}} = \dfrac{1}{r}\pp{}{r}(rf_r) + \dfrac{1}{r}\pp{f_\phi}{\phi} + \pp{f_z}{z} \)
+\end{itemize}
+
+\textit{In Spherical Coordinates}
+\begin{itemize}
+\itemt\( \divergence{\vec{f}} = \dfrac{1}{r}\pp{}{r}(r^2f_r) + \dfrac{1}{r\sin\theta}\pp{}{\theta}(f_\theta \sin\theta) + \dfrac{1}{r\sin\theta}\pp{f_\phi}{\phi} \)
+\end{itemize}
+
+\subsubsection{Curl}
+\def\arraystretch{1.5}
+\textit{\hspace*{0.4cm} In Cartesian Coordinates}
+\begin{itemize}
+\itemt curl($f$) \( = \curl\vec{f} = 
+\begin{vmatrix}
+\hat{x} 	& \hat{y} 		& \hat{z} \\
+\pp{}{x} & \pp{}{y} 	& \pp{}{z} \\
+f_x			& f_y 			& f_z
+\end{vmatrix}        
+	= (\pp{f_z}{y} - \pp{f_y}{z})\hat{x} + (\pp{f_x}{z} - \pp{f_z}{z})\hat{y} + (\pp{f_y}{x} - \pp{f_x}{y})\hat{z} \)
+\end{itemize}
+
+\textit{In Cylindrical Coordinates}
+\begin{itemize}
+\itemt \( \curl\vec{f} = (\dfrac{1}{r} \pp{f_z}{\phi} - \pp{f_\phi}{z})\hat{r} + (\pp{f_r}{z} - \pp{f_z}{r})\hat{\phi} + \dfrac{1}{r} (\pp{}{r} (r f_\phi) - \pp{f_r}{\phi})\hat{z} \)
+\end{itemize}
+
+\textit{In Spherical Coordinates}                
+\begin{itemize}
+\itemt \( \curl\vec{f} = \dfrac{1}{r\sin\theta} (\pp{}{\theta} (f_\phi \sin\theta) - \pp{f_\theta}{\phi})\hat{r} + \dfrac{1}{r}(\dfrac{1}{\sin\theta} \pp{f_r}{\phi} - \pp{}{r} (rf_\phi)) + \dfrac{1}{r}(\pp{}{r}(rf_\theta) - \pp{f_r}{\theta})\)
+\end{itemize}
+
+
+\subsubsection{Vector Second Derivatives}
+
+\begin{itemize}
+\itemt \(\divergence(\curl\vec{f}) = 0\)
+\itemt \( \curl(\curl\vec{f}) = \vec{\nabla}(\divergence\vec{f})-\vec{\nabla}^2\vec{f}\)
+\end{itemize}
+
+\textit{Vector Laplacian}
+\begin{itemize}
+\itemt \( \vec{\nabla}^2 \vec{f} = \vec{\nabla} (\divergence\vec{f}) - \curl (\curl\vec{f})\)
+\end{itemize}
+
+
+\subsubsection{Stokes' Theorem}
+\begin{itemize}
+\itemt \( \iint\limits_{S} (\curl{\vec{f}})\cdot d\vec{a} = \oint\limits_{B} \vec{f}\cdot \dn\vec{l} \)
+\end{itemize}
+
+
+\subsubsection{Divergence Theorem}
+\begin{itemize}
+\itemt \( \iiint\limits_{V} (\divergence{\vec{f}}) dV = \oint\limits_{S} \vec{f}\cdot \dn\vec{a} \)
+\end{itemize}
+
+
+\subsection{Dirac Delta Function}
+\begin{itemize}
+\itemt  \( \delta(x) = \begin{cases} 
+      0; & x\neq 0 \\
+      \infty; & x= 0 \\
+   \end{cases}
+\)
+\itemt  \( \delta(x-a) = \begin{cases} 
+      0; & x\neq a \\
+      \infty; & x= a \\
+   \end{cases}
+\)
+\itemt \( \int\limits_{-\infty}^{\infty} \delta(x) \dn x = 1\)
+\itemt \( f(x)\delta(x) = f(0)\delta(x) \)
+\end{itemize}
+
+
+\subsection{Approximations}
+\begin{itemize}
+\itemt \( f(x+\Delta x) \approx f(x) + \Delta x f'(x) \)
+\end{itemize}

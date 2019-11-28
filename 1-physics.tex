@@ -1,0 +1,1099 @@
+\chapter{Physics}
+
+	\section{Motion}
+
+\subsection{Velocity}
+
+\begin{itemize}
+\itemt \( \vec{v} = \) \( \dfrac{\Delta \vec{x}}{\Delta t} = \dfrac{d \vec{x}}{dt} \) \(= \vec{\dot{x}}  \)
+\end{itemize}
+
+\subsection{Acceleration}
+
+\begin{itemize}
+\itemt \( \vec{a} = \dfrac{\Delta \vec{v}}{\Delta t} = \dfrac{d \vec{v}}{dt} = \dfrac{d^2 \vec{x}}{dt^2} = \vec{\ddot{x}}  \)	
+\end{itemize}            
+		
+\subsection{Newton's Laws}
+
+\subsubsection{Newton's First Law}
+\begin{itemize}
+\item When viewed in an inertial reference frame, an object either remains at rest or continues to move at a constant velocity, unless acted upon by a net force.
+\end{itemize}
+
+\subsubsection{Newton's Second Law}
+\begin{itemize}
+\itemt \(\vec{F}_{net} = m\vec{a} = \dd{\vec{p}}{t}	\)
+\end{itemize}
+
+\subsubsection{Newton's Third Law}
+\begin{itemize}
+\itemt \(\vec{F}_A = -\vec{F}_B	\) 
+\item When one body exerts a force on a second body, the second body simultaneously exerts a force equal in magnitude and opposite in direction on the first body.
+\end{itemize}			
+
+\subsection{Momentum}
+\begin{itemize}
+\itemt \( \vec{p} = \gamma m\vec{v} \approx m\vec{v}\)
+\itemt \( \Delta\vec{p} = \vec{F} \Delta t \)
+\itemt \(\vec{F} = \dfrac{\Delta \vec{p}}{\Delta t} = \dd{\vec{p}}{t} \)
+\end{itemize}
+
+\subsection{Centripetal Force}
+\begin{itemize}
+\itemt \(F_c = \dfrac{mv^2}{r}\)
+\end{itemize}		
+
+\subsection{Kinetic Energy}	
+\begin{itemize}
+\itemt \( K = \frac{1}{2} mv^2 \)
+\end{itemize}
+
+\subsection{Projectile Motion}		
+\begin{itemize}
+\itemt \(v_y^2 = u_y^2 + 2a_y\Delta y \)
+\itemt \( x = u_xt \)
+\itemt \(\Delta y = u_y \Delta t + \frac{1}{2} a_y \Delta t^2 = u_y t + \frac{1}{2} \dfrac{F_{y}}{m} \Delta t^2\)
+\end{itemize}	
+
+
+\subsection{Rotation}
+
+\subsubsection{Angular Velocity}
+\begin{itemize}
+\itemt \( \omega = \dd{\theta}{t} = \dot{\theta} \)
+\itemt \( \omega = \dfrac{v}{r} \)
+\itemt \( \vec{v} = \vec{r} \times \vec{\omega} \)
+\end{itemize}
+
+\subsubsection{Angular Acceleration}
+\begin{itemize}
+\itemt \( \alpha = \dd{\omega}{t} = \dd{^2\theta}{t^2} = \dot{\omega} = \ddot{\theta}\)
+\end{itemize}
+
+\subsubsection{Moment of Inertia}
+\textit{Point Mass}
+\begin{itemize}
+\itemt \( I = mr^2 \)
+\end{itemize}
+\textit{Several Point Masses}
+\begin{itemize}
+\itemt \( I = \sum mr^2 \)
+\end{itemize}
+\textit{Continuous mass}
+\begin{itemize}
+\itemt \( I = \int r^2 \dn m \)
+\end{itemize}
+\textit{Parallel axis theorem}
+\begin{itemize}
+\itemt \( I = I_{com} + md^2 \)
+\end{itemize}
+\textit{Thin disc rotating about centre}
+\begin{itemize}
+\itemt \( I = \dfrac{MR^2}{2} \)
+\end{itemize}
+\textit{Thin hoop rotating about centre}
+\begin{itemize}
+\itemt \( I = MR^2 \)
+\end{itemize}
+\textit{Thin rod rotating about centre}
+\begin{itemize}
+\itemt \( I = \dfrac{ML^2}{12} \)
+\end{itemize}
+\textit{Thin rod rotating about end}
+\begin{itemize}
+\itemt \( I = \dfrac{ML^2}{3} \)
+\end{itemize}
+
+
+\subsubsection{Rotational Kinetic Energy}
+\begin{itemize}
+\itemt \( K_{rot} = \frac{1}{2} I \omega^2 \)
+\end{itemize}
+
+\subsubsection{Total Kinetic Energy}
+\begin{itemize}
+\itemt \( K_{tot} = K_{trans} + K_{rot} = \frac{1}{2} (mr_{com}^2 + I_{com})\omega^2 \)
+\end{itemize}
+
+\subsubsection{Angular Momentum}
+\begin{itemize}
+\itemt \( \vec{L} = I\vec{\omega} = \vec{r} \times \vec{p}\)
+\end{itemize}
+
+\subsubsection{Torque}
+\begin{itemize}
+\item \( \vec{\tau} = I\vec{\alpha} = \dd{L}{t} = \vec{r} \times \vec{F}\)
+\end{itemize}
+
+\subsection{Euler-Lagrange and the Hamiltonian}	
+
+\subsubsection{Lagrangian}			
+\begin{itemize}
+\itemt \(\ell = T - V = \sum\limits_{lm} a(q)\dot{q}_l\dot{q}_m \)
+\itemt \ \ \( = K(\dot{q}_l) - U(q_l)\)
+\end{itemize}
+
+\textit{Generalised coordinates \& momenta}
+\begin{itemize}
+\itemt \( p_k \equiv \pp{L}{\dot{q_k}}\)
+\end{itemize}
+
+\subsubsection{Euler-Lagrange Equation}			
+\begin{itemize}
+\itemt \( \dd{}{t} \pp{\ell}{\dot{x}} - \pp{\ell}{x} = 0\)
+\end{itemize}
+
+\subsubsection{Action}			
+\begin{itemize}
+\itemt \(S[x(t)] = \int\limits_{t_A}^{t_B} \ell(\dot{x}(t),x(t)) \dn t\)
+\end{itemize}			
+
+\subsubsection{Hamiltonian}
+\begin{itemize}
+\itemt \( \mathcal{H} = \sum\limits_{l} p_l \dot{q} - L \)
+\itemt \( \dot{P} = -\dfrac{\partial H}{\partial Q} \)		
+\itemt \( \dot{Q} = \dfrac{\partial H}{\partial P} \)
+\itemt \( \dot{P} = -\omega^2Q \)
+\itemt \(\dot{Q} = P\)
+\end{itemize}
+				
+	\section{Oscillations}
+
+\subsection{Springs}
+
+\subsubsection{Force of a Spring}
+\begin{itemize}
+\itemt \(\vec{F} = -k_s\vec{x}\)
+\end{itemize}
+
+\subsubsection{Potential Energy of a Spring}
+\begin{itemize}
+\itemt \( U_s = \dfrac{1}{2} k_s x^2 \)
+\end{itemize}
+
+\subsubsection{Angular Frequency of a Spring}
+\begin{itemize}
+\itemt \( \omega = \sqrt{\dfrac{k_s}{m}} \)
+\end{itemize}
+
+	\section{Materials}
+
+\subsection{Density}
+\begin{itemize}
+\itemt \( \rho = \dfrac{m}{V} = \dd{m}{V} \)
+\end{itemize}
+				
+	\section{Energy}
+
+\subsection{Work}
+\begin{itemize}
+\itemt \(W = \int\limits_{a}^{b} \vec{F}\cdot \dn\vec{l} \approx \vec{F} \cdot \vec{s}\)
+\end{itemize}
+				
+	\section{Forces}
+
+\subsection{Buoyancy (Archimedes' Principle)}			
+\begin{itemize}
+\itemt \( F_{buoy} = m_{displaced}g = \rho_{d} V_{d}g \)
+\end{itemize}				
+
+\subsection{Friction}			
+\begin{itemize}
+\itemt \( F_{K} \approx \mu_K F_\perp \)
+\itemt \( F_{S} \leq \mu_S F_\perp \)
+\end{itemize}				
+				
+	\section{Waves}
+\begin{itemize}
+\itemt \( a \sin(\omega t - kx + \phi) \)
+\itemt \( k = \frac{2\pi}{\lambda} \)
+\end{itemize}
+
+
+\subsection{Wavelength}			
+\begin{itemize}
+\itemt \( v = f\lambda \)
+\end{itemize}
+
+\subsection{Angular Frequency}
+\begin{itemize}
+\itemt \( \omega = \dfrac{2\pi}{T} = 2\pi f \)
+\end{itemize}
+
+	\section{Newtonian Gravity}	
+
+\subsection{Force of Gravity}
+\begin{itemize}
+\itemt \( \vec{F}_G = \dfrac{GmM}{r^2} \hat{r} = -m\vec{\nabla}\Phi(\vec{r}) \approx -mg\hat{y} = m\vec{g}\)
+\end{itemize}	
+
+\subsection{Gravitational Potential (potential energy per unit mass)}		
+\begin{itemize}
+\itemt \( \Phi(\vec{r}) = -\sum\limits_{i} \dfrac{GM(\vec{r}_i)}{|\vec{r}-\vec{r}_i|} = - \int \dfrac{G\mu(\vec{r'})}{|\vec{r} - \vec{r'}|} \dn^3\vec{r'} \)
+\end{itemize}
+
+\subsection{Gravitational field}
+\begin{itemize}
+\itemt \(\vec{g}(\vec{r}) = \dfrac{GM}{r^2} = -\nabla\Phi(\vec{r})\)
+\end{itemize}										
+
+\subsection{Gravitational Potential Energy}		
+\begin{itemize}
+\itemt \( U_G = -\dfrac{GmM}{r} \approx mgh\)
+\end{itemize}
+
+\subsection{Kepler's Third Law}		
+\begin{itemize}
+\itemt \( \dfrac{T^2}{r^3} = \dfrac{4\pi^2}{G(m+M)} = constant\)
+\end{itemize}	
+
+	\section{Electromagnetism}
+
+		\subsection{Notation}
+        \begin{itemize}
+        \itemt \( \vec{\scriptr} = \vec{r} - \vec{r'} \)
+        \end{itemize}
+
+		\subsection{Maxwell's Equations}
+
+\def\arraystretch{3}
+\begin{tabular}{ |l|l|l| } 
+\hline
+					
+  &	\textbf{Integral form}	& 	\textbf{Differential form}
+\\ \hline
+
+\textbf{Gauss's Law}	
+&\( \oiint\limits_{S} \vec{E} \cdot \dn\vec{a} = \dfrac{1}{\varepsilon_0} \iiint\limits_V \rho \dn V \)	
+& \( \divergence \vec{E} = \dfrac{\rho}{\varepsilon_0} \)
+\\
+& \hspace{1.4cm}\( = \dfrac{\sum Q_{enc}}{\varepsilon_0} \) &
+\\ \hline
+
+\textbf{Gauss's Law for Magnetism}	
+&\( \oiint\limits_{S} \vec{B} \cdot \dn\vec{a} = 0 \)
+&\( \divergence \vec{B} = 0 \)
+\\ \hline
+
+\textbf{Maxwell-Faraday equation}	
+&\( \oint\limits_{b} \vec{E} \cdot \dn\vec{l} = -\dd{}{t} \iint\limits_S \vec{B} \cdot \dn\vec{a}\)	&\( \curl \vec{E} = -\pp{\vec{B}}{t} \)
+\\ \hline
+
+\textbf{Amp\'ere's circuital law}	
+& \( \oint\limits_{b} \vec{B} \cdot \dn\vec{l} = \mu_0 \iint\limits_S \vec{J} \cdot \dn\vec{a} + \mu_0\varepsilon_0 \dd{}{t} \iint\limits_S \vec{E}\cdot d\vec{a}\)	
+&\( \curl \vec{B} = \mu_0(\vec{J} + \varepsilon_0 \pp{\vec{E}}{t}) \)
+\\
+& \hspace{1.1cm} \( = \mu_0 (I_{enc} + \varepsilon_0 \dd{}{t} \int\limits_S \vec{E} \cdot \dn\vec{a} ) \) &
+\\ \hline
+\end{tabular}
+
+%\twocolumn
+
+		\subsection{Lorentz Force}
+
+\subsubsection{On a point charge}
+\begin{itemize}
+\itemt \( \vec{F} = q(\vec{E}+\vec{v}\times \vec{B})\)
+\end{itemize}
+
+\subsubsection{On a current}
+\begin{itemize}
+\itemt \( \dn\vec{F} = I \int \dn\vec{l} \times \vec{B} \)
+\itemt \( \vec{F} = \vec{I}L\times \vec{B} \)
+\end{itemize}
+
+		\subsection{Electric Field}
+        
+\begin{itemize}
+\itemt \( \vec{E} = \int\limits_V \dfrac{\rho(\vec{r'})}{\scriptr ^2}\hat{\scriptr} \dn\tau \)
+\end{itemize}
+
+\subsubsection{From a single point charge}
+\begin{itemize}
+\itemt \( \vec{E} = \dfrac{1}{4\pi\varepsilon_0} \dfrac{q}{r^2} \hat{r} \)
+\end{itemize}
+
+\subsubsection{From a dipole}
+\begin{itemize}
+\itemt \( |\vec{E}_axis| \approx \dfrac{2p}{4\pi\varepsilon_0r^3} \)
+\itemt \( |\vec{E}_\perp| \approx \dfrac{p}{4\pi\varepsilon_0r^3} \)
+\end{itemize}
+
+		\subsection{Dipole moment}
+        
+\begin{itemize}
+\itemt \( \vec{p} = q\vec{d} \)
+\end{itemize}
+
+		\subsection{Electric potential}
+        
+\begin{itemize}
+\itemt \( V = \dfrac{1}{4\pi\varepsilon_0} \dfrac{Q}{\scriptr} \)
+\itemt \( \nabla^2 V = \dfrac{-\rho}{\varepsilon_0} \)
+\end{itemize}
+
+\subsubsection{In a single-point charge field}
+\begin{itemize}
+\itemt \( \Delta (\vec{r}) = \dfrac{1}{4\pi\varepsilon_0}\dfrac{q}{r} \)
+\end{itemize}
+        
+        \subsection{Electric potential difference}
+        
+\begin{itemize}
+\itemt \( \Delta (\vec{r}) = - \int\limits_{\vec{b}}^{\vec{a}} \vec{E}\cdot\dn \vec{l} \)
+\end{itemize}
+
+\subsubsection{In a single-point charge field}
+\begin{itemize}
+\itemt \( \Delta (\vec{r}) = \dfrac{1}{4\pi\varepsilon_0} Q (\dfrac{1}{b} - \dfrac{1}{a}) \)
+\end{itemize}
+
+		\subsection{Electric potential energy}
+        
+\begin{itemize}
+\itemt \( U_E = q\Delta V = \dfrac{1}{4\pi \varepsilon_0} \dfrac{qQ}{\scriptr} \)
+\end{itemize}
+
+\subsubsection{Energy stored in an electrostatic field distribution}
+\begin{itemize}
+\itemt \( U_E = \frac{1}{2} =\epsilon_0 E^2 \times volume \)
+\end{itemize}
+
+		\subsection{Charge densities}
+        
+\subsubsection{Surface}
+\begin{itemize}
+\itemt \( \sigma = \dd{q}{a} = \dfrac{Q}{A} \)
+\end{itemize}
+\subsubsection{Line}
+\begin{itemize}
+\itemt \( \lambda = \dd{q}{l} = \dfrac{Q}{L} \) 
+\end{itemize}
+
+		\subsection{Current densities}
+        
+\subsubsection{Volume}
+\begin{itemize}
+\itemt \( \vec{J} = \dd{\vec{I}}{\vec{a}_\perp} = \dfrac{I}{A_\perp} = \sigma(\vec{E}+\vec{v}\times B) = |q|nu (\vec{E}+\vec{v}\times B)\)
+\itemt \( \vec{\nabla} \cdot \vec{J} = 0 \)
+\end{itemize}
+
+\subsubsection{Surface}
+\begin{itemize}
+\itemt \( \vec{K} = \dd{\vec{I}}{\vec{l}_\perp} = \dfrac{I}{l} = \sigma \vec{v}\)
+\end{itemize}
+
+
+
+
+		\subsection{Circuits}
+
+\subsubsection{Electron drift velocity}
+\begin{itemize}
+\itemt \( \bar{v} = u\vec{E}_{net} \)
+\end{itemize}	
+
+\subsubsection{Current per unit charge}
+\begin{itemize}
+\itemt \(i = nA_{cs}\bar{v} = nA_{cs}uE_{net}\)
+\end{itemize}
+
+\subsubsection{Current}
+\begin{itemize}
+\itemt \( I = ei = enA_{cs}uE_{net} = \dd{q}{t}\)
+\end{itemize}	
+
+\subsubsection{Electrical Power}
+\begin{itemize}
+\itemt \( P = IV = I^2R \)
+\end{itemize}
+
+\subsubsection{Voltage (Electric potential difference)}
+\begin{itemize}
+\itemt \( V = \Delta V = IR = - \varepsilon \)
+\end{itemize}
+
+\subsubsection{Electromotive Force (EMF) from a Non-Coulomb force}
+\begin{itemize}
+\itemt \( \epsilon = \dfrac{F_{NC}d}{e} \)
+\end{itemize}
+
+\subsubsection{Resistance}
+\begin{itemize}
+\itemt \( R = \dfrac{L\rho}{A} = \dfrac{L}{\sigma A} \)					
+\itemt \( R_{series} = R_1 + R_2 + ... +R_n \)
+\itemt \( \dfrac{1}{R_{parallel}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + ... + \dfrac{1}{R_n} \)
+\end{itemize}
+
+		\subsection{Capacitors}
+
+\subsubsection{Capacitance}
+\begin{itemize}
+\itemt \( C = \dfrac{Q}{V} = \dfrac{\varepsilon A}{d} = \dfrac{k\varepsilon_0A}{d} \)
+\end{itemize}
+
+\subsubsection{Energy stored in a capacitor}
+\begin{itemize}
+\itemt \( W = \dfrac{CV^2}{2} \)
+\end{itemize}
+
+\subsubsection{Electric field in a capacitor}
+\begin{itemize}
+\itemt \( E = \dfrac{Q}{\varepsilon_0 A} \)
+\end{itemize}
+
+\subsubsection{Potential difference across a capacitor}
+\begin{itemize}
+\itemt \( \Delta V = -\dfrac{dQ}{A\varepsilon_0} \)
+\end{itemize}
+				
+		\subsection{Magnetic fields}
+        
+\begin{itemize}
+\itemt \( \vec{B}(\vec{\scriptr}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\vec{I}\times\hat{\scriptr}}{\scriptr^2} \dn l \)
+\itemt \( \dn \vec{B} = \dfrac{\mu_0}{4\pi} \dfrac{q\vec{v}\times\hat{\scriptr}}{\scriptr^2} = \dfrac{\mu_0}{4\pi} \dfrac{I\dn\vec{l}\times\hat{\scriptr}}{\scriptr^2} \)
+\end{itemize}
+
+\subsubsection{Magnetic field due to a wire}
+\begin{itemize}
+\itemt \( \vec{B} = \dfrac{\mu_0}{4\pi} \dfrac{2I}{r} \hat{\phi} \)
+\end{itemize}
+
+\subsubsection{Magnetic vector potential}
+\begin{itemize}
+\itemt \( \vec{A}(\vec{\scriptr}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\vec{J}(\vec{r'})}{\scriptr} \dn \tau \)
+\itemt \( \curl\vec{A} = \vec{B} \)
+\itemt \( \vec{\nabla} \times (\vec{\nabla} \times \vec{A}) = -\mu_0 \vec{J} \)
+\itemt \( \divergence\vec{A} = 0 \)
+\end{itemize}
+
+		\subsection{Inductors}
+        
+\begin{itemize}
+\itemt \( \varepsilon = - LI \)
+\end{itemize}
+        
+\subsubsection{Energy stored in an inductor}  
+\begin{itemize}
+\itemt \( W = \dfrac{LI^2}{2} \)
+\end{itemize}
+
+		\subsection{Materials}
+
+\subsubsection{Macroscopic Maxwell's Equations (Materials)}
+
+\def\arraystretch{2.5}
+\begin{tabular}{ |l|l|l| } 
+\hline
+					
+  &	\textbf{Integral form}	& 	\textbf{Differential form}
+\\ \hline
+
+\textbf{Gauss's Laws}	
+&\( \oiint\limits_{S} \vec{P} \cdot \dn\vec{a} = -\sum Q_B \)	
+& \( \divergence \vec{P} = -\rho_B \)
+\\
+& \( \oiint\limits_{S} \vec{D}\cdot\dn\vec{a} = \sum Q_f \) 
+& \( \divergence \vec{D} = \rho_f \)
+\\ \hline
+
+\textbf{Gauss's Law for Magnetism}	
+&\( \oiint\limits_{S} \vec{B} \cdot \dn\vec{a} = 0 \)
+&\( \divergence \vec{B} = 0 \)
+\\ \hline
+
+\textbf{Maxwell-Faraday equation}	
+&\( \oint\limits_{b} \vec{E} \cdot \dn\vec{l} = -\dd{}{t} \iint\limits_S \vec{B} \cdot \dn\vec{a}\)	
+&\( \curl \vec{E} = -\pp{\vec{B}}{t} \)
+\\ \hline
+
+\textbf{Amp\'ere's circuital law}	
+& \( \oint\limits_{b} \vec{H} \cdot \dn\vec{l} = I_{f,enc} + \pp{}{t} \iint\limits_S \vec{D}\cdot \dn \vec{a}\)	
+&\( \curl \vec{H} = \vec{J_f} + \pp{\vec{D}}{t} \)
+\\ \hline
+\end{tabular}
+
+
+\subsubsection{Dielectric constant}
+\begin{itemize}
+\itemt \( k = \dfrac{\varepsilon}{\varepsilon_0} = \varepsilon_r \)
+\itemt \( \varepsilon = k\varepsilon_0 = \varepsilon_r \varepsilon\)
+\end{itemize}
+
+\subsubsection{Susceptibility}
+\begin{itemize}
+\itemt \( \chi_e = 1-\varepsilon_r \)
+\end{itemize}
+
+\subsubsection{Polarisability}
+\begin{itemize}
+\itemt \( \vec{P} = \varepsilon_0\chi_e\vec{E} = n\vec{p} \)
+\end{itemize}
+
+\subsubsection{Bound Charge}
+\begin{itemize}
+\item[Surface] 
+\itemt \( \sigma_B = \vec{p}\cdot\hat{n} \)
+\item[Volume]
+\itemt \( \rho_B = -\vec{\nabla}\cdot\vec{P} \)
+\item[Total]
+\itemt \( Q_B = \sigma_B + \rho_B = \vec{p}\cdot\hat{n} -\vec{\nabla}\cdot\vec{P} \)
+\end{itemize}
+
+\subsubsection{Electric displacement}
+\begin{itemize}
+\itemt \( \vec{D} = \varepsilon \vec{E} = k\varepsilon_0 \vec{E} = \varepsilon_0\vec{E} + \vec{P} \)
+\end{itemize}
+
+\subsubsection{Magnetic field}
+\begin{itemize}
+\itemt \( \vec{H} = \dfrac{\vec{B}}{\mu_0} - \vec{M} \)
+\end{itemize}
+
+\subsubsection{Magnetic dipole}
+\begin{itemize}
+\itemt \( \vec{m} = I\vec{a} \)
+\end{itemize}
+
+\subsubsection{Bound current}
+\begin{itemize}
+\itemt \( \vec{J}_B = \curl \vec{M} \)
+\itemt \( \vec{K}_B = \vec{M}\times\hat{n} \)
+\end{itemize}
+
+
+	\section{Special Relativity}
+
+\subsection{Interval}
+\begin{itemize}
+\itemt \( \Delta s^2 = -c^2\Delta t^2 + \Delta x^2 +\Delta y^2 +\Delta z^2 \)
+\itemt \( \dn s^2 = -c^2\dn t^2 + \dn x^2 + \dn y^2 + \dn z^2 \)
+\itemt \( \Delta s^2 < 0 \) is a timelike interval. Events separated by this interval can be causally related.
+\itemt \( \Delta s^2 = 0 \) is a lightlike interval. Events separated by this interval can be causally related, but only by a lightspeed signal.
+\itemt \( \Delta s^2 > 0 \) is a spacelike interval. Events separated  by this interval CANNOT be causally related.
+\end{itemize}
+
+\subsubsection{Gamma Factor}		
+\begin{itemize}
+\itemt \( \gamma = \dfrac{1}{\sqrt{1-(\dfrac{v}{c})^2}} \)
+\itemt \( \gamma = \dfrac{dt}{d\tau} \)
+\end{itemize}		
+
+\subsubsection{Mass-energy}
+\begin{itemize}
+\itemt \( E_{rest} = mc^2\)
+\itemt \( E = \gamma mc^2 = \dfrac{1}{\sqrt{1-(\dfrac{v}{c})^2}}mc^2 \)
+\end{itemize}
+
+\subsubsection{Relativistic kinetic energy}
+\begin{itemize}
+\itemt \( K = \gamma mc^2 - mc^2 \)
+\end{itemize}
+
+\subsubsection{Length contraction}
+\begin{itemize}
+\itemt \( l_v = \dfrac{l_0}{\gamma} = l_0\sqrt{1-(\dfrac{v}{c})^2} \)
+\end{itemize}
+
+\subsubsection{Time dilation}
+\begin{itemize}
+\itemt \( t_v = \gamma t_0 = \dfrac{t_0}{\sqrt{1-(\dfrac{v}{c})^2}}\)
+\end{itemize}
+
+\subsubsection{Mass dilation}
+\begin{itemize}
+\itemt \( m_v = \gamma m_0 = \dfrac{m_0}{\sqrt{1-(\dfrac{v}{c})^2}}\)
+\end{itemize}
+
+\subsubsection{Relative Velocity}
+\begin{itemize}
+\itemt \( u_x'= \dfrac{\Delta x'}{\Delta  t} = \dfrac{u_x-v_x}{1-\dfrac{v_xu_x}{c^2}} \)
+\end{itemize}
+
+\subsubsection{Relativistic Momentum}
+\begin{itemize}
+\itemt \( \vec{p} = \gamma \vec{v} = \dfrac{m\vec{v}}{\sqrt{1-(v/c)^2}} \)
+\end{itemize}
+
+\subsection{Four-vectors}
+\def\arraystretch{1}
+\subsubsection{Four-space}			
+\begin{itemize}
+\itemt \(\mathbf{s} = \mathbf{x} = 
+\begin{bmatrix}
+ct \\
+x \\
+y \\
+z \\
+\end{bmatrix}
+\)
+\end{itemize}
+
+\subsubsection{Four-velocity (proper velocity)}			
+\begin{itemize}
+\itemt \(\textbf{u} = \dfrac{d\textbf{s}}{d\tau} = \gamma 
+\begin{bmatrix} 
+c \\
+v_x\\
+v_y\\
+v_z
+\end{bmatrix}\)
+\itemt \( \textbf{u}\cdot\textbf{u} = -c^2  \)
+\end{itemize}
+
+\subsubsection{Four-acceleration}			
+\begin{itemize}
+\itemt \(\textbf{w} = \dfrac{d\textbf{u}}{d\tau} = \gamma 
+\begin{bmatrix} 
+c \\
+v_x\\
+v_y\\
+v_z
+\end{bmatrix}\)
+\item \( \textbf{w}\cdot\textbf{u} = 0 \)
+\end{itemize}
+
+\subsubsection{Four-momentum}			
+\begin{itemize}
+\itemt \(\textbf{p} = 
+\begin{bmatrix} 
+E/c \\
+p_x\\
+p_y\\
+p_z
+\end{bmatrix} = \gamma m
+\begin{bmatrix} 
+c \\
+v_x\\
+v_y\\
+v_z
+\end{bmatrix} = m\textbf{u}\)
+\end{itemize}	
+                
+\subsection{Frames of Reference}		
+
+\subsubsection{Condition for an inertial frame}	
+\begin{itemize}
+\itemt \( \dfrac{d^2 x}{dt^2} = \dfrac{d^2 y}{dt^2} = \dfrac{d^2 z}{dt^2} \) \normalsize \(= 0\)
+\end{itemize}		 
+
+\subsubsection[GT]{Galilean Transformations}				 
+\begin{itemize}
+\itemt \(x' = x + vt\)
+\itemt \(y' = y\)
+\itemt \(z' = z\)
+\itemt All assuming $x$ is along the axis of motion and \textit{x = x'} when $t = 0$.	
+\end{itemize}
+
+\subsubsection{Lorentz Boosts}				
+\begin{itemize}
+\itemt \( \ t' = \gamma (t-\dfrac{vx}{c^2})\)
+\itemt \( x' = \gamma (x-vt)\)
+\itemt \( y' = y \)
+\itemt \( z' = z \)
+\itemt ($x$ is along the axis of motion)					
+\itemt \(					
+\begin{bmatrix}
+ct' \\
+x' \\
+y' \\
+z' \\
+\end{bmatrix} =
+\begin{bmatrix}
+\gamma 		&-v\gamma	&0	&0 	\\
+-v\gamma 	&\gamma		&0	&0	\\
+0 			&0			&1	&0	\\
+0 			&0			&0	&1	\\
+\end{bmatrix}
+\begin{bmatrix}
+ct \\
+x \\
+y \\
+z \\
+\end{bmatrix} \)
+\end{itemize}		
+
+\subsubsection{General Lorentz transformation}
+\begin{itemize}
+\itemt 
+\( \begin{bmatrix}
+b'^0 \\
+b'^1 \\
+b'^2 \\
+b'^3 \\
+\end{bmatrix} =
+\begin{bmatrix}
+\gamma 		&-v\gamma	&0	&0 	\\
+-v\gamma 	&\gamma		&0	&0	\\
+0 			&0			&1	&0	\\
+0 			&0			&0	&1	\\
+\end{bmatrix}
+\begin{bmatrix}
+b^0 \\
+b^1 \\
+b^2 \\
+b^3 \\
+\end{bmatrix} \)
+\itemt Motion along the $x$-axis.
+\end{itemize}
+
+
+\subsubsection{Proper Time}
+\begin{itemize}
+\itemt \( \tau = \int\limits_{t_A}^{t_B} \dfrac{1}{\gamma} \dn t =\int\limits_{t_A}^{t_B} \sqrt{1 - \dfrac{{v}^2(t)}{c^2}} \dn t \)
+\end{itemize}
+
+	\section{General Relativity}
+    
+		\subsection{Metrics}
+
+\subsubsection{Minkowski}
+\begin{itemize}
+\itemt \( \eta =
+\begin{bmatrix}
+-1 	&0	&0	&0 	\\
+0 	&1	&0	&0	\\
+0 	&0	&1	&0	\\
+0 	&0	&0	&1	\\
+\end{bmatrix} =
+\begin{bmatrix}
+-1 	&0	&0	&0 	\\
+0 	&1	&0	&0	\\
+0 	&0	&r^2	&0	\\
+0 	&0	&0	&r^2 \sin^2 \theta	\\
+\end{bmatrix}\)
+\itemt \( \dn s^2 = -c^2 \dn t^2 + \dn x^2 + \dn y^2 + \dn z^2 \tab[0.5cm]=  -c^2 \dn t^2 + \dn r^2 + r^2 \dn \theta ^2 + r^2 \sin^2 \theta \dn \phi^2 \)
+\end{itemize}
+
+\subsubsection{Schwarzschild}
+\begin{itemize}
+\itemt \( g =
+\begin{bmatrix}
+-(1-\dfrac{2GM}{c^2r}) 	&0							&0		&0 					\\
+0 						&(1-\dfrac{2GM}{c^2r})^{-1}	&0		&0					\\
+0 						&0							&r^2	&0					\\
+0 						&0							&0		&r^2\sin^2\theta	\\
+\end{bmatrix} \)
+\itemt \( \dn s^2 = -(1-\dfrac{2GM}{c^2r})c^2 \dn t^2 + (1-\dfrac{2GM}{c^2r})^{-1} \dn r^2 + r^2 \dn \theta^2 + r^2\sin^2 \theta \dn \phi^2) \)
+\end{itemize}
+
+		\subsection{Rindler coordinates}
+
+\subsubsection{Line element}
+\begin{itemize}
+\itemt \( \dn s^2 = -(1+\dfrac{gx'}{c^2})^2(c \dn t')^2 + \dn x' \)
+\end{itemize}
+
+		\subsection{Einstein summation notation}
+        
+\begin{itemize}
+\item \( a_\mu b^\mu \equiv \sum\limits^3_{\mu=0} a_\mu b^\mu \)
+\item Contravariant: $e^\alpha$
+\item Covariant: $e_\alpha$
+\itemt \( t_{\alpha\beta} = g_{\beta\gamma} t_\alpha{}^\gamma \)
+\itemt \( t_\alpha{}^\beta = g^{\beta\gamma} t_{\alpha\gamma} \)
+\itemt \( t'^\alpha{}_\beta = \pp{x'^\alpha}{x^\gamma} \pp{x^\delta}{x'^\beta} t^\gamma{}_\delta\)
+\itemt \( t'_\alpha{}^\beta = \pp{x^\gamma}{x'^\alpha} \pp{x'^\beta}{x^\delta} t_\gamma{}^\delta\)
+\end{itemize}
+
+\subsubsection{Metrics}
+\begin{itemize}
+\itemt \( \dn s^2 = g_{\alpha\beta} \dn x^\alpha \dn x^\beta \)
+\itemt \( g^{\alpha\beta} = \dfrac{1}{g_{\alpha\beta}} \)
+\itemt \( \delta^\alpha_\beta =
+\begin{cases}
+      1 & \alpha = \beta \\
+      1	& \alpha \neq \beta \\
+\end{cases}
+\)
+\itemt \( \delta^\alpha_\gamma a^\gamma = a^\alpha \)
+\itemt \( g^{\alpha\gamma}g_{\gamma\beta} = \delta^\alpha_\beta \) % And the reverse?
+\end{itemize}
+
+\subsubsection{Four-vector product}
+\begin{itemize}
+\itemt \( \textbf{a}\cdot \textbf{b} = g_{\alpha\beta}a^\alpha b^\beta = a_\beta b^\alpha\)
+\end{itemize}
+        
+		\subsection{Christoffel symbols}
+
+\begin{itemize}
+\itemt \( \Gamma^\alpha{}_{\beta\gamma} = \frac{1}{2} g^{\alpha\delta} (\pp{g_{\delta\beta}}{x^\gamma} + \pp{g_{\delta\gamma}}{x^\beta} - \pp{g_{\beta\gamma}}{x^\delta})  \) 
+
+\itemt \( \Gamma_{\alpha\beta\gamma} = \frac{1}{2}(\pp{g_{\delta\beta}}{x^\gamma} + \pp{g_{\delta\gamma}}{x^\beta} - \pp{g_{\beta\gamma}}{x^\delta})  \) 
+
+\itemt \( \dd{^2 x^\mu}{\tau} + \Gamma^\mu{}_{\alpha\beta} \dd{x^\alpha}{\tau} \dd{x^\beta}{\tau} = 0\)
+\end{itemize}
+
+		\subsection{Covariant derivatives}
+\begin{itemize}
+\itemt \( \nabla_\gamma t^\alpha{}_\beta = \pp{t^\alpha{}_\beta}{x^\gamma} + \Gamma^\alpha{}_{\gamma\delta}t^\delta{}_\beta - \Gamma^\delta{}_{\gamma\beta}t^\alpha{}_\delta \)
+
+\itemt \( \nabla_\gamma t^{\alpha\beta} = \pp{t^{\alpha\beta}}{x^\gamma} + \Gamma^\alpha{}_{\gamma\delta}t^{\delta\beta} + \Gamma^\beta{}_{\gamma\delta}t^{\alpha{}\delta} \)
+
+\itemt \( \nabla_\gamma t_{\alpha\beta} = \pp{t_{\alpha\beta}}{x^\gamma} - \Gamma^\delta{}_{\gamma\alpha}t_{\delta\beta} - \Gamma^\delta{}_{\gamma\beta}t^{\alpha\delta} \)
+
+\itemt \( \nabla_\gamma t_\alpha{}^\beta = \pp{t_\alpha{}^\beta}{x^\gamma} - \Gamma^\delta{}_{\gamma\alpha}t_\delta{}^\beta + \Gamma^\beta{}_{\gamma\delta}t_\alpha{}^\delta \)
+\end{itemize}
+
+		\subsection{Riemann curvature tensor}
+\begin{itemize}
+\itemt \( R^\alpha{}_{\beta\gamma\delta} = \pp{\Gamma^\alpha{}_{\beta\delta}}{x^\gamma} - \pp{\Gamma^\alpha{}_{\beta\gamma}}{x^\delta} + \Gamma^\alpha{}_{\gamma\epsilon}\Gamma^\epsilon{}_{\beta\delta} - \Gamma^\alpha{}_{\delta\epsilon}\Gamma^\epsilon{}_{\beta\gamma} \)
+
+\itemt \( R_{\alpha\beta\gamma\delta} = \frac{1}{2}(\pp{^2g_{\alpha\delta}}{x^\beta \partial x^\gamma} - \pp{^2g_{\alpha\gamma}}{x^\beta \partial x^\delta} - \pp{^2g_{\beta\delta}}{x^\alpha \partial x^\gamma}) + \pp{^2g_{\beta\gamma}}{x^\alpha \partial x^\delta}\)
+
+\itemt \( R_{\alpha\beta\gamma\delta} = -R_{\beta\alpha\gamma\delta} \)
+\itemt \( R_{\alpha\beta\gamma\delta} = -R_{\beta\alpha\delta\gamma} \)
+\itemt \( R_{\alpha\beta\gamma\delta} = R_{\delta\gamma\alpha\beta} \)
+\itemt \( R_{\alpha\beta\gamma\delta} + R_{\alpha\delta\beta\gamma} + R_{\alpha\gamma\delta\beta = 0}\)
+
+\end{itemize}
+
+		\subsection{Ricci curvature tensor}
+\begin{itemize}
+\itemt \( R_{\alpha\beta} = R^\gamma{}_{\alpha\gamma\beta} \)
+\itemt \( R = R^\alpha{}_\alpha  \)
+\end{itemize}
+
+
+		\subsection{Einstein's equations}
+\begin{itemize}
+\itemt \( R_{\mu\nu} - \frac{1}{2} g_{\mu\nu} R + \Lambda g_{\mu\nu}= \dfrac{8\pi G}{c^4} T_{\mu\nu} \)
+\end{itemize}
+
+	\section{Thermodynamics}
+
+
+
+\subsection{Ideal Gases}
+
+\subsubsection{Ideal Gas Law}
+\begin{itemize}
+\itemt \( pV = Nk_BT \)
+\end{itemize}
+
+\subsubsection{Heat / Thermal Energy}
+\begin{itemize}
+\itemt \( Q = mc \Delta T \)
+\end{itemize}
+
+\subsubsection{Heat Capacity}
+\begin{itemize}
+\itemt \( C = \dd{Q}{T} \)
+\end{itemize}
+
+\subsubsection{Specific Heat Capacity}
+\begin{itemize}
+\itemt \( c = \dfrac{C}{m} \)
+\end{itemize}
+
+
+
+
+
+\subsection{Microstates}
+
+\begin{itemize}
+\itemt \( \Omega = \dfrac{(q+N-1)}{q!(N-1)} \)
+\end{itemize}
+
+\subsection{Entropy}
+
+\begin{itemize}
+\itemt \( S = k_B \ln \Omega \)
+\end{itemize}
+
+
+\subsection{Black bodies}
+
+\subsubsection{Energy of a photon}
+% This might not be the best place for this
+\begin{itemize}
+\itemt \( E = hf \)
+\end{itemize}
+
+\subsubsection{Wien's Displacement Law}
+\begin{itemize}
+\itemt \( \lambda_{max} = \dfrac{b}{T} = (2.8977729\times10^{-3}) \dfrac{1}{T} \)
+\end{itemize}
+
+\subsubsection{Stefan-Boltzmann Law}
+\begin{itemize}
+\itemt \( I = \sigma T^4 \)
+\end{itemize}
+
+\subsubsection{Spectrum}
+\begin{itemize}
+\itemt \( B_\lambda (T) = \dfrac{2 h c^2}{\lambda^5} \dfrac{1}{\exp(\dfrac{h c}{\lambda k_B T} - 1)} \)
+\itemt \( B_\nu (T) = \dfrac{2 h \nu}{c^2} \dfrac{1}{\exp(\dfrac{h \nu}{k_B T}) - 1} \)
+\end{itemize}
+
+	\section{Quantum Mechanics}	
+
+\subsection{The Uncertainty Principle}
+\begin{itemize}
+\item \( \Delta x \Delta p \geq \dfrac{\hbar}{2} \)
+\item \( \Delta E \Delta t \geq \dfrac{\hbar}{2} \)
+\end{itemize}
+
+\subsection{Bras and Kets}			
+\begin{itemize}
+\itemt \( \ket{\psi} = \bra{\psi}^\dagger \)
+\end{itemize}				
+
+\subsection{Rules for an Inner Product}			
+
+\begin{itemize}
+\itemt \( \braket{\psi}{\phi} \equiv (\ket{\psi}, \ket{\phi}) \)
+\item Symmetric:
+\subitem \( \braket{\psi}{\phi} = \braket{\phi}{\psi}^* \)
+\item Linear in second component
+\item Anti-linear in first component
+\end{itemize}				
+
+\subsection{The Born Rule}
+\begin{itemize}
+\itemt \( P = |\braket{\psi}{\psi}|^2 \)
+\end{itemize}
+
+\subsection{Expectation}
+\begin{itemize}
+\itemt \( \langle A \rangle = \int A |\Psi(x,t)|^2 \dn x \)
+\itemt \( \langle A \rangle = \bra{\psi} A \ket{\psi} \)
+\end{itemize}	
+
+\subsection{Variance}
+\begin{itemize}
+\itemt \( \mathrm{var}(A) = \bra{\psi} A^2 \ket{\psi} - \bra{\psi} A \ket{\psi}^2 \)
+\end{itemize}	
+
+\subsection{Standard Deviation}
+\begin{itemize}
+\itemt \( \delta A = \sqrt{\mathrm{var}(A)} = \sqrt{\bra{\psi} A^2 \ket{\psi} - \bra{\psi} A \ket{\psi}^2} \)
+\end{itemize}
+
+\subsection{Trace}
+\begin{itemize}
+\itemt \( \mathrm{Tr} (A) = \sum\limits_{j} \bra{x_j} A \ket{x_j} \)
+\end{itemize}
+
+\subsection{Partial Trace}			
+\begin{itemize}
+\itemt \( Tr_B(\ket{a}\bra{a}\otimes\ket{b}\bra{b}) \equiv \ket{a}\bra{a} \mathrm{Tr} (\ket{b}\bra{b}) \)
+\itemt \( \mathrm{Tr} (k_{AB}) = Tr_A(Tr_B(k_{AB})) = Tr_B(Tr_A(k_{AB})) \)
+\itemt \( \rho_B = Tr_A(\rho_{AB}) \)
+\itemt The partial trace is linear
+\end{itemize}
+
+\subsection{The Schr\"odinger Equation}			
+\begin{itemize}
+\itemt \( i \hbar \dfrac{\partial }{\partial t} \Psi (r,t) = \hat{H} \Psi(r,t) \)
+\itemt \( -\dfrac{\hbar^2}{2m} \pp{^2 \Psi(x,t)}{x^2} + V(x)\Psi(x,t) = i\hbar\pp{\Psi(x,t)}{t} \)
+\itemt \( -\dfrac{\hbar^2}{2m} \pp{^2 \psi(x)}{x^2} + V(x)\psi(x,t) = E\psi(x) \)
+\itemt \( \hat{H}\ket{\Psi(t)} = i\hbar \dfrac{\partial }{\partial t} \ket{\Psi(t)} \)
+\end{itemize}
+
+\subsection{Heisenberg equation of motion}			
+\begin{itemize}
+\itemt \( \dfrac{d}{dt} \hat{A}(t) = \dfrac{i}{\hbar}[\hat{H},\hat{A}(t)] \)
+\end{itemize}			
+
+\subsection{Operators}			
+\begin{itemize}
+\itemt \( a_{jk} = \bra{j} A \ket{k} \)
+\end{itemize}			
+
+\subsubsection{Diagonalizable Operator}			
+\begin{itemize}
+\itemt \( A = \sum\limits_{j} \lambda_j \ket{\lambda_j} \bra{\lambda_j} \)
+\end{itemize}
+
+\subsubsection{Normal Operator}			
+\begin{itemize}
+\itemt \( A =\sum\limits_{j} \ket{\lambda_j} \bra{\lambda_j} \)
+\end{itemize}
+
+\subsubsection{Eigenstate Operators}			
+\begin{itemize}
+\itemt \( (\ket{\lambda_k}\bra{\lambda_k})^n = \ket{\lambda_k}\bra{\lambda_k} \)
+\end{itemize}
+
+\subsubsection{Identity}
+\begin{itemize}
+\itemt \( I = \sum\limits_{j} \ket{x_j} \bra{x_j} \)
+\end{itemize}
+
+\subsubsection{Projector}
+\begin{itemize}
+\itemt \( P = \ket{\psi} \bra{\psi} \)
+\end{itemize}				
+
+\subsubsection{Density operator}
+\begin{itemize}
+\itemt \( \rho \equiv \sum\limits_{j} P_j \ket{\psi_j}\bra{\psi_j} \)
+\itemt Hermitian: \( \rho^\dagger = \rho \)
+\itemt Normalised: \( \mathrm{Tr} (\rho) = 1 \)
+\itemt Positive Semi-Definite: \( \bra{\psi}\rho\ket{\psi} \geq 0, \ \forall \ \ket{\psi} \in \mathbf{H} \)
+%\item $\rho' = U\rho U^\dagger$
+\itemt \( purity = \mathrm{Tr} (\rho^2) \)
+	\begin{itemize}
+	\itemt \( \dfrac{1}{d} \leq \mathrm{Tr} (\rho^2) \leq 1 \)
+	\itemt Pure: \( \mathrm{Tr} (\rho^2) = 1 \)
+	\itemt Maximally mixed: \( \mathrm{Tr} (\rho^2) = \dfrac{1}{d} \)
+	\end{itemize}
+\itemt \( \rho_A = Tr_B(\rho_{AB}) \)
+\itemt \( \langle A\rangle = \mathrm{Tr} (\rho A) \)
+\end{itemize}				
+
+\subsubsection{Pauli Operators}
+\begin{itemize}
+\itemt \( \sigma_x = X = \ket{0}\bra{1} + \ket{1}\bra{0} \doteq 		
+\begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix} \)					
+\itemt \( \sigma_y = Y = i\ket{1}\bra{0} - i\ket{0}\bra{1} \doteq 
+\begin{bmatrix}
+0 & -i \\
+i & 0
+\end{bmatrix} \)					
+\itemt \( \sigma_z = Z = \ket{0}\bra{0} - \ket{1}\bra{1} \doteq 
+\begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix} \)					
+\itemt \( I = \ket{0}\bra{0} + \ket{1}\bra{1} \doteq \begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix} \) (Sometimes included)					
+\itemt \( Trx = \mathrm{Tr} (Y) = \mathrm{Tr} (Z) = 0 \)					
+\itemt With respect to Hilbert-Schmidt Inner Product:
+\subitem \( ||X|| = ||Y|| = ||Z|| = ||I|| = \sqrt{2} \)				
+\end{itemize}
+
+\textit{Properties}
+\begin{itemize}
+\itemt Unitary
+\itemt Hermitian
+\itemt \( \lambda = \pm 1 \)
+\end{itemize}
+
+\subsubsection{Photon Annihilation and Creation Operators}			
+\begin{itemize}
+\itemt \( \hat{a}\ket{n} = \sqrt{n}\ket{n-1} \)
+\itemt \( \hat{a}^\dagger\ket{n} = \sqrt{n+1}\ket{n+1} \)
+\itemt \( \hat{a}\ket{\alpha} = \alpha\ket{\alpha} \)
+\itemt \( \bra{\alpha}\hat{a}^\dagger = \alpha^*\bra{\alpha} \)
+\end{itemize}
+
+\subsubsection{Atomic Energy Level Operators (for a two-level approximation)}	
+\begin{itemize}
+\itemt \( \hat{\sigma}_+ = \ket{e}\bra{g} \)
+\itemt \( \hat{\sigma}_- = \ket{g}\bra{e} \)
+\itemt \( \hat{\sigma}_z = \ket{e}\bra{e} - \ket{g}\bra{g} \)
+\itemt \( \hat{\sigma}_+\ket{g} = \ket{e} \)
+\itemt \( \hat{\sigma}_-\ket{e} = \ket{g} \)
+\itemt \( \hat{\sigma}_+\ket{e} = 0 \)
+\itemt \( \hat{\sigma}_-\ket{g} = 0 \)
+\end{itemize}

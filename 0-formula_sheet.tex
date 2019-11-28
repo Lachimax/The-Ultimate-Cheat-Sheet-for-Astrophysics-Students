@@ -1,0 +1,95 @@
+% Track down:
+% ASTR278 formula sheet
+% ASTR378 formula sheet
+
+% Formulae from:
+% HSC + 
+% Audrey's Sheets +
+% Scifi Cheat Sheet
+
+% MATH135 - no sheet
+% MATH136 - no sheet
+% MATH235 - no sheet
+% PHYS107 + 2014 + 2017
+% PHYS106 + 2014 + 2017
+% PHYS201 + 2014 + 2017
+% PHYS202 + 2015 + 2017
+% PHYS301 + custom handwritten
+% PHYS304 + custom Latex
+% ASTR278 + 2015 + 2017
+% ASTR377 + Lecture Slides
+% ASTR378 + 2016 + 2017 + custom handwritten
+
+% PHYS701 - custom handwritten - custom Latex
+% PHYS702 - 2018 - 2018 integrals - custom handwritten
+
+% ASTR707 - custom handwritten - exam sheets
+% ASTR708 - custom handwritten - exam sheets
+
+\documentclass[]{report}
+
+%\usepackage{physics}
+%\usepackage{mtpro2}
+
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=2.0cm,marginparwidth=1.75cm]{geometry}
+\usepackage{mathtools}
+\usepackage{esint} 
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{tikz}
+\usepackage[
+    type={CC},
+    modifier={by-sa},
+    version={4.0},
+]{doclicense}
+\usepackage{calligra}
+\usepackage{wasysym}
+\usepackage{times}
+
+\urlstyle{same}
+
+\DeclarePairedDelimiter\bra{\langle}{\rvert}
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}
+\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+
+\newcommand \tab[1][1cm]{\hspace*{#1}}
+\newcommand{\dn}[1]{\ \mathrm{d}#1}
+\newcommand{\dd}[2]{ \dfrac{\dn #1}{\dn #2}}
+\newcommand{\pp}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\curl}{\vec{\nabla}\times}
+\newcommand{\divergence}{\vec{\nabla}\cdot}
+\newcommand{\itemt}{\item \tab}
+\newcommand{\items}{\item\ \ }
+\newcommand{\degrees}{^{\circ}}
+\newcommand{\scriptr}{\mathcalligra{r}\,}
+
+\title{{\large A Web of Worlds presents} \ \\\ The Ultimate Cheat Sheet for Astrophysics Students}
+\date{v 1.1 \\ \today}
+\author{Lachlan Marnoch \\ \url{www.webofworlds.net}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+%\twocolumn
+
+\input{1-physics.tex}
+\input{2-astronomy.tex}
+\input{3-mathematics}
+\input{4-statistics.tex}
+
+\appendix
+
+\input{a-constants.tex}
+\input{b-units.tex}
+\input{c-maths.tex}
+\input{d-misc.tex}
+
+%\chapter{Other Useful Information}
+%\section{Periodic Table of the Elements}
+
+\end{document}
