@@ -195,7 +195,7 @@
 
 \subsection{Buoyancy (Archimedes' Principle)}			
 \begin{itemize}
-\itemt \( F_{buoy} = m_{displaced}g = \rho_{d} V_{d}g \)
+\itemt \( F_{buoy} = m_\mathrm{displaced}g = \rho_{d} V_{d}g \)
 \end{itemize}				
 
 \subsection{Friction}			
@@ -245,7 +245,7 @@
 
 \subsection{Kepler's Third Law}		
 \begin{itemize}
-\itemt \( \dfrac{T^2}{r^3} = \dfrac{4\pi^2}{G(m+M)} = constant\)
+\itemt \( \dfrac{T^2}{r^3} = \dfrac{4\pi^2}{G(m+M)} = \mathrm{constant}\)
 \end{itemize}	
 
 	\section{Electromagnetism}
@@ -268,7 +268,7 @@
 &\( \oiint\limits_{S} \vec{E} \cdot \dn\vec{a} = \dfrac{1}{\varepsilon_0} \iiint\limits_V \rho \dn V \)	
 & \( \divergence \vec{E} = \dfrac{\rho}{\varepsilon_0} \)
 \\
-& \hspace{1.4cm}\( = \dfrac{\sum Q_{enc}}{\varepsilon_0} \) &
+& \hspace{1.4cm}\( = \dfrac{\sum Q_\mathrm{enc}}{\varepsilon_0} \) &
 \\ \hline
 
 \textbf{Gauss's Law for Magnetism}	
@@ -284,7 +284,7 @@
 & \( \oint\limits_{b} \vec{B} \cdot \dn\vec{l} = \mu_0 \iint\limits_S \vec{J} \cdot \dn\vec{a} + \mu_0\varepsilon_0 \dd{}{t} \iint\limits_S \vec{E}\cdot d\vec{a}\)	
 &\( \curl \vec{B} = \mu_0(\vec{J} + \varepsilon_0 \pp{\vec{E}}{t}) \)
 \\
-& \hspace{1.1cm} \( = \mu_0 (I_{enc} + \varepsilon_0 \dd{}{t} \int\limits_S \vec{E} \cdot \dn\vec{a} ) \) &
+& \hspace{1.1cm} \( = \mu_0 (I_\mathrm{enc} + \varepsilon_0 \dd{}{t} \int\limits_S \vec{E} \cdot \dn\vec{a} ) \) &
 \\ \hline
 \end{tabular}
 
@@ -357,7 +357,7 @@
 
 \subsubsection{Energy stored in an electrostatic field distribution}
 \begin{itemize}
-\itemt \( U_E = \frac{1}{2} =\epsilon_0 E^2 \times volume \)
+\itemt \( U_E = \frac{1}{2} =\epsilon_0 E^2 \times \mathrm{volume} \)
 \end{itemize}
 
 		\subsection{Charge densities}
@@ -391,17 +391,17 @@
 
 \subsubsection{Electron drift velocity}
 \begin{itemize}
-\itemt \( \bar{v} = u\vec{E}_{net} \)
+\itemt \( \bar{v} = u\vec{E}_\mathrm{net} \)
 \end{itemize}	
 
 \subsubsection{Current per unit charge}
 \begin{itemize}
-\itemt \(i = nA_{cs}\bar{v} = nA_{cs}uE_{net}\)
+\itemt \(i = nA_{cs}\bar{v} = nA_{cs}uE_\mathrm{net}\)
 \end{itemize}
 
 \subsubsection{Current}
 \begin{itemize}
-\itemt \( I = ei = enA_{cs}uE_{net} = \dd{q}{t}\)
+\itemt \( I = ei = enA_{cs}uE_\mathrm{net} = \dd{q}{t}\)
 \end{itemize}	
 
 \subsubsection{Electrical Power}
@@ -416,14 +416,14 @@
 
 \subsubsection{Electromotive Force (EMF) from a Non-Coulomb force}
 \begin{itemize}
-\itemt \( \epsilon = \dfrac{F_{NC}d}{e} \)
+\itemt \( \epsilon = \dfrac{F_\mathrm{NC}d}{e} \)
 \end{itemize}
 
 \subsubsection{Resistance}
 \begin{itemize}
 \itemt \( R = \dfrac{L\rho}{A} = \dfrac{L}{\sigma A} \)					
-\itemt \( R_{series} = R_1 + R_2 + ... +R_n \)
-\itemt \( \dfrac{1}{R_{parallel}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + ... + \dfrac{1}{R_n} \)
+\itemt \( R_\mathrm{series} = R_1 + R_2 + ... +R_n \)
+\itemt \( \dfrac{1}{R_\mathrm{parallel}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + ... + \dfrac{1}{R_n} \)
 \end{itemize}
 
 		\subsection{Capacitors}
@@ -582,7 +582,7 @@
 
 \subsubsection{Mass-energy}
 \begin{itemize}
-\itemt \( E_{rest} = mc^2\)
+\itemt \( E_\mathrm{rest} = mc^2\)
 \itemt \( E = \gamma mc^2 = \dfrac{1}{\sqrt{1-(\dfrac{v}{c})^2}}mc^2 \)
 \end{itemize}
 
@@ -782,7 +782,7 @@ b^3 \\
 
 \subsubsection{Line element}
 \begin{itemize}
-\itemt \( \dn s^2 = -(1+\dfrac{gx'}{c^2})^2(c \dn t')^2 + \dn x' \)
+\itemt \( \dn s^2 = -\left(1+\dfrac{gx'}{c^2}\right)^2\left(c \dn t'\right)^2 + \dn x' \)
 \end{itemize}
 
 		\subsection{Einstein summation notation}
@@ -980,9 +980,9 @@ b^3 \\
 
 \subsection{Partial Trace}			
 \begin{itemize}
-\itemt \( Tr_B(\ket{a}\bra{a}\otimes\ket{b}\bra{b}) \equiv \ket{a}\bra{a} \mathrm{Tr} (\ket{b}\bra{b}) \)
-\itemt \( \mathrm{Tr} (k_{AB}) = Tr_A(Tr_B(k_{AB})) = Tr_B(Tr_A(k_{AB})) \)
-\itemt \( \rho_B = Tr_A(\rho_{AB}) \)
+\itemt \( \mathrm{Tr}_B(\ket{a}\bra{a}\otimes\ket{b}\bra{b}) \equiv \ket{a}\bra{a} \mathrm{Tr} (\ket{b}\bra{b}) \)
+\itemt \( \mathrm{Tr} (k_{AB}) = \mathrm{Tr}_A(\mathrm{Tr}_B(k_{AB})) = \mathrm{Tr}_B(Tr_A(k_{AB})) \)
+\itemt \( \rho_B = \mathrm{Tr}_A(\rho_{AB}) \)
 \itemt The partial trace is linear
 \end{itemize}
 
@@ -1042,7 +1042,7 @@ b^3 \\
 	\itemt Pure: \( \mathrm{Tr} (\rho^2) = 1 \)
 	\itemt Maximally mixed: \( \mathrm{Tr} (\rho^2) = \dfrac{1}{d} \)
 	\end{itemize}
-\itemt \( \rho_A = Tr_B(\rho_{AB}) \)
+\itemt \( \rho_A = \mathrm{Tr}_B(\rho_{AB}) \)
 \itemt \( \langle A\rangle = \mathrm{Tr} (\rho A) \)
 \end{itemize}				
 
@@ -1067,7 +1067,7 @@ i & 0
 1 & 0 \\
 0 & 1
 \end{bmatrix} \) (Sometimes included)					
-\itemt \( Trx = \mathrm{Tr} (Y) = \mathrm{Tr} (Z) = 0 \)					
+\itemt \( \mathrm{Tr} (X) = \mathrm{Tr} (Y) = \mathrm{Tr} (Z) = 0 \)					
 \itemt With respect to Hilbert-Schmidt Inner Product:
 \subitem \( ||X|| = ||Y|| = ||Z|| = ||I|| = \sqrt{2} \)				
 \end{itemize}
