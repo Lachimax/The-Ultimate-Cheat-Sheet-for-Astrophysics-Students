@@ -5,13 +5,13 @@
 \subsection{Velocity}
 
 \begin{itemize}
-\itemt \( \vec{v} = \) \( \dfrac{\Delta \vec{x}}{\Delta t} = \dfrac{d \vec{x}}{dt} \) \(= \vec{\dot{x}}  \)
+\itemt \( \vec{v} = \) \( \dfrac{\Delta \vec{x}}{\Delta t} = \dd{\vec{x}}{t} \) \(= \vec{\dot{x}}  \)
 \end{itemize}
 
 \subsection{Acceleration}
 
 \begin{itemize}
-\itemt \( \vec{a} = \dfrac{\Delta \vec{v}}{\Delta t} = \dfrac{d \vec{v}}{dt} = \dfrac{d^2 \vec{x}}{dt^2} = \vec{\ddot{x}}  \)	
+\itemt \( \vec{a} = \dfrac{\Delta \vec{v}}{\Delta t} = \dd{\vec{v}}{t} = \dd{^2 \vec{x}}{t^2} = \vec{\ddot{x}}  \)	
 \end{itemize}            
 		
 \subsection{Newton's Laws}
@@ -576,14 +576,14 @@
 
 \subsubsection{Gamma Factor}		
 \begin{itemize}
-\itemt \( \gamma = \dfrac{1}{\sqrt{1-(\dfrac{v}{c})^2}} \)
-\itemt \( \gamma = \dfrac{dt}{d\tau} \)
+\itemt \( \gamma = \dfrac{1}{\sqrt{1-\left(\dfrac{v}{c}\right)^2}} \)
+\itemt \( \gamma = \dd{t}{\tau}\) 
 \end{itemize}		
 
 \subsubsection{Mass-energy}
 \begin{itemize}
 \itemt \( E_\mathrm{rest} = mc^2\)
-\itemt \( E = \gamma mc^2 = \dfrac{1}{\sqrt{1-(\dfrac{v}{c})^2}}mc^2 \)
+\itemt \( E = \gamma mc^2 = \dfrac{1}{\sqrt{1-\left(\dfrac{v}{c}\right)^2}}mc^2 \)
 \end{itemize}
 
 \subsubsection{Relativistic kinetic energy}
@@ -593,17 +593,17 @@
 
 \subsubsection{Length contraction}
 \begin{itemize}
-\itemt \( l_v = \dfrac{l_0}{\gamma} = l_0\sqrt{1-(\dfrac{v}{c})^2} \)
+\itemt \( l_v = \dfrac{l_0}{\gamma} = l_0\sqrt{1-\left(\dfrac{v}{c}\right)^2} \)
 \end{itemize}
 
 \subsubsection{Time dilation}
 \begin{itemize}
-\itemt \( t_v = \gamma t_0 = \dfrac{t_0}{\sqrt{1-(\dfrac{v}{c})^2}}\)
+\itemt \( t_v = \gamma t_0 = \dfrac{t_0}{\sqrt{1-\left(\dfrac{v}{c}\right)^2}}\)
 \end{itemize}
 
 \subsubsection{Mass dilation}
 \begin{itemize}
-\itemt \( m_v = \gamma m_0 = \dfrac{m_0}{\sqrt{1-(\dfrac{v}{c})^2}}\)
+\itemt \( m_v = \gamma m_0 = \dfrac{m_0}{\sqrt{1-\left(\dfrac{v}{c}\right)^2}}\)
 \end{itemize}
 
 \subsubsection{Relative Velocity}
@@ -613,7 +613,7 @@
 
 \subsubsection{Relativistic Momentum}
 \begin{itemize}
-\itemt \( \vec{p} = \gamma \vec{v} = \dfrac{m\vec{v}}{\sqrt{1-(v/c)^2}} \)
+\itemt \( \vec{p} = \gamma \vec{v} = \dfrac{m\vec{v}}{\sqrt{1-\left(\dfrac{v}{c}\right)^2}} \)
 \end{itemize}
 
 \subsection{Four-vectors}
@@ -632,7 +632,7 @@ z \\
 
 \subsubsection{Four-velocity (proper velocity)}			
 \begin{itemize}
-\itemt \(\textbf{u} = \dfrac{d\textbf{s}}{d\tau} = \gamma 
+\itemt \(\textbf{u} = \dd{\textbf{s}}{\tau} = \gamma 
 \begin{bmatrix} 
 c \\
 v_x\\
@@ -644,7 +644,7 @@ v_z
 
 \subsubsection{Four-acceleration}			
 \begin{itemize}
-\itemt \(\textbf{w} = \dfrac{d\textbf{u}}{d\tau} = \gamma 
+\itemt \(\textbf{w} = \dd{\textbf{u}}{\tau} = \gamma 
 \begin{bmatrix} 
 c \\
 v_x\\
@@ -675,7 +675,7 @@ v_z
 
 \subsubsection{Condition for an inertial frame}	
 \begin{itemize}
-\itemt \( \dfrac{d^2 x}{dt^2} = \dfrac{d^2 y}{dt^2} = \dfrac{d^2 z}{dt^2} \) \normalsize \(= 0\)
+\itemt \( \dd{^2 x}{t^2} = \dd{^2 y}{t^2} = \dd{^2 z}{t^2} \) \normalsize \(= 0\)
 \end{itemize}		 
 
 \subsubsection[GT]{Galilean Transformations}				 
@@ -688,7 +688,7 @@ v_z
 
 \subsubsection{Lorentz Boosts}				
 \begin{itemize}
-\itemt \( \ t' = \gamma (t-\dfrac{vx}{c^2})\)
+\itemt \( \ t' = \gamma \left(t-\dfrac{vx}{c^2}\right)\)
 \itemt \( x' = \gamma (x-vt)\)
 \itemt \( y' = y \)
 \itemt \( z' = z \)
@@ -841,7 +841,7 @@ b^3 \\
 \begin{itemize}
 \itemt \( R^\alpha{}_{\beta\gamma\delta} = \pp{\Gamma^\alpha{}_{\beta\delta}}{x^\gamma} - \pp{\Gamma^\alpha{}_{\beta\gamma}}{x^\delta} + \Gamma^\alpha{}_{\gamma\epsilon}\Gamma^\epsilon{}_{\beta\delta} - \Gamma^\alpha{}_{\delta\epsilon}\Gamma^\epsilon{}_{\beta\gamma} \)
 
-\itemt \( R_{\alpha\beta\gamma\delta} = \frac{1}{2}(\pp{^2g_{\alpha\delta}}{x^\beta \partial x^\gamma} - \pp{^2g_{\alpha\gamma}}{x^\beta \partial x^\delta} - \pp{^2g_{\beta\delta}}{x^\alpha \partial x^\gamma}) + \pp{^2g_{\beta\gamma}}{x^\alpha \partial x^\delta}\)
+\itemt \( R_{\alpha\beta\gamma\delta} = \frac{1}{2}\left(\pp{^2g_{\alpha\delta}}{x^\beta \partial x^\gamma} - \pp{^2g_{\alpha\gamma}}{x^\beta \partial x^\delta} - \pp{^2g_{\beta\delta}}{x^\alpha \partial x^\gamma}\right) + \pp{^2g_{\beta\gamma}}{x^\alpha \partial x^\delta}\)
 
 \itemt \( R_{\alpha\beta\gamma\delta} = -R_{\beta\alpha\gamma\delta} \)
 \itemt \( R_{\alpha\beta\gamma\delta} = -R_{\beta\alpha\delta\gamma} \)
@@ -925,8 +925,8 @@ b^3 \\
 
 \subsubsection{Spectrum}
 \begin{itemize}
-\itemt \( B_\lambda (T) = \dfrac{2 h c^2}{\lambda^5} \dfrac{1}{\exp(\dfrac{h c}{\lambda k_B T} - 1)} \)
-\itemt \( B_\nu (T) = \dfrac{2 h \nu}{c^2} \dfrac{1}{\exp(\dfrac{h \nu}{k_B T}) - 1} \)
+\itemt \( B_\lambda (T) = \dfrac{2 h c^2}{\lambda^5} \dfrac{1}{\exp\left(\dfrac{h c}{\lambda k_B T} - 1\right)} \)
+\itemt \( B_\nu (T) = \dfrac{2 h \nu}{c^2} \dfrac{1}{\exp\left(\dfrac{h \nu}{k_B T}\right) - 1} \)
 \end{itemize}
 
 	\section{Quantum Mechanics}	

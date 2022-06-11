@@ -1,23 +1,23 @@
 \chapter{Astrophysics \& Astronomy}
 
-	\section{Astrometry}
+	\section{Photometry}
 
 
 
 \subsection{Redshift}
 \begin{itemize}
-\itemt \( z = \dfrac{\lambda_\mathrm{obs} - \lambda_\mathrm{emit}}{\lambda_\mathrm{emit}} =\dfrac{f_\mathrm{emit} - f_\mathrm{obs}}{f_\mathrm{obs}} \approx \dfrac{v}{c}\tab[0.5cm] (v<<c) \)
+\itemt \( z = \dfrac{\lambda_\mathrm{obs} - \lambda_\mathrm{emit}}{\lambda_\mathrm{emit}} = \dfrac{\lambda_\mathrm{obs}}{\lambda_\mathrm{emit}} - 1 =\dfrac{f_\mathrm{emit} - f_\mathrm{obs}}{f_\mathrm{obs}} \approx \dfrac{v}{c}\tab[0.5cm] (v<<c) \)
 \itemt \( 1+z = \dfrac{\lambda_\mathrm{obs}}{\lambda_\mathrm{emit}} = \dfrac{f_\mathrm{emit}}{f_\mathrm{obs}} \)
 \end{itemize}
 
 \subsection{Apparent magnitude}	
 \begin{itemize}
-\itemt \( m-m_0=-2.5\log_{10} (\dfrac{F}{F_0}) \)
+\itemt \( m-m_0=-2.5\log_{10} \left(\dfrac{F}{F_0}\right) \)
 \end{itemize}
 
 \subsection{Absolute magnitude}
 \begin{itemize}
-\itemt \( M = m - 5 \log_{10} (\dfrac{d}{10}) \)
+\itemt \( M = m - 5 \log_{10} \left(\dfrac{d}{10}\right) \)
 \end{itemize}
 
 \subsection{Relative magnitudes}
@@ -32,12 +32,12 @@
 
 \subsection{Color}			
 \begin{itemize}
-\itemt \( -2.5\log(\dfrac{F_{f1}}{F_{f2}}) \)
+\itemt \( -2.5\log\left(\dfrac{F_{f1}}{F_{f2}}\right) = m_\mathrm{high} - m_\mathrm{low}\)
 \end{itemize}			
 
 \subsection{Metallicity}		
 \begin{itemize}
-\itemt \( Z = \log_{10}(\dfrac{(Fe/H)_*}{(Fe/H)_\odot}) = \log_{10}(Fe/H)_* - log_{10}(Fe/H)_\odot \)
+\itemt \( Z = \log_{10}\left(\dfrac{(Fe/H)_*}{(Fe/H)_\odot}\right) = \log_{10}(Fe/H)_* - log_{10}(Fe/H)_\odot \)
 \end{itemize}
 
 
@@ -89,7 +89,7 @@
 
 \subsubsection{Nuclear Timescale / Main Sequence Lifespan}
 \begin{itemize}
-\itemt \( \tau_N \approx \tau_{\odot}M^{-3} \approx 10^9 (\dfrac{M}{M_{\odot}})^{-3} \)
+\itemt \( \tau_N \approx \tau_{\odot}M^{-3} \approx 10^9 (\dfrac{M}{\si{\solarmass}})^{-3} \)
 \end{itemize}
 
 
@@ -100,22 +100,22 @@
 
 		\subsection{Eddington Limit (hydrostatic equilibrium)}
 \begin{itemize}
-\itemt \( L_{edd} = \dfrac{4\pi G M m_p c}{\sigma T} \approx 3.2 \times 10^4 (\dfrac{M}{M_\odot})\ [L_\odot] \)
-\itemt \( M_{edd} = 3.1*10^{-5} (\dfrac{L}{L_\odot})\ [M_\odot] \)
+\itemt \( L_{edd} = \dfrac{4\pi G M m_p c}{\sigma T} \approx 3.2 \times 10^4 (\dfrac{M}{\si{\solarmass}})\ [\si{\solarlum}] \)
+\itemt \( M_{edd} = 3.1*10^{-5} (\dfrac{L}{\si{\solarlum}})\ [\si{\solarmass}] \)
 \end{itemize}
 
 \subsubsection{Eddington Rate (mass loss)}
 \begin{itemize}
-\itemt \( \dot{M}_{edd} = \dfrac{L_{edd}}{\eta c^2} \approx 2.4 \times 10^{-8} (\dfrac{M}{M_\odot})\ [M_\odot / yr]\)
+\itemt \( \dot{M}_{edd} = \dfrac{L_{edd}}{\eta c^2} \approx 2.4 \times 10^{-8} (\dfrac{M}{\si\solarmass})\ [\si{\solarmass/\year}]\)
 \end{itemize}
 
 \subsection{Mass-Luminosity Relationship}
 \begin{itemize}
-\itemt \( \dfrac{L}{L_\odot} \approx b\left(\dfrac{M}{M_\odot}\right)^a\ ;\ \ \ \ \ \ a, b = \begin{cases} 
-      2.3,\ 0.23	& M<0.43M_\odot \\
-      4,\ 1			& 0.43M_\odot < M < 2M_\odot \\
-      3.5,\ 1.5 	& 2M_\odot < M < 20M_\odot \\
-      1,\ 32000 	& M > 55M_\odot \\
+\itemt \( \dfrac{L}{\si\solarlum} \approx b\left(\dfrac{M}{\si\solarmass}\right)^a\ ;\ \ \ \ \ \ a, b = \begin{cases} 
+      2.3,\ 0.23	& M<0.43\si\solarmass \\
+      4,\ 1			& 0.43\si\solarmass < M < 2\si\solarmass \\
+      3.5,\ 1.5 	& 2\si\solarmass < M < 20\si\solarmass \\
+      1,\ 32000 	& M > 55\si\solarmass \\
    \end{cases}
 \)
 \end{itemize}
@@ -163,8 +163,8 @@
 
 \subsection{Lensmaker's equation}
 \begin{itemize}
-\itemt \( \dfrac{1}{f} \hspace*{0.3cm} = (n-1)[\dfrac{1}{R_1} - \dfrac{1}{R_2}+\dfrac{(n-1)d}{nR_1R_2}] \)
-\subitem \hspace*{0.85cm} \( \approx (n-1)[\dfrac{1}{R_1} - \dfrac{1}{R_2}] \) \tab     (Thin lens approximation)
+\itemt \( \dfrac{1}{f} \hspace*{0.3cm} = (n-1)\left[\dfrac{1}{R_1} - \dfrac{1}{R_2}+\dfrac{(n-1)d}{nR_1R_2}\right] \)
+\subitem \hspace*{0.85cm} \( \approx (n-1)\left[\dfrac{1}{R_1} - \dfrac{1}{R_2}\right] \) \tab     (Thin lens approximation)
 \end{itemize}
 
 \subsection{Focal ratio / Focal number}
@@ -184,7 +184,7 @@
 \itemt \( \varepsilon_d = 1.22 \dfrac{\lambda}{D} \)
 \end{itemize}			
 
-\subsubsection{Seeing limit (Rayleigh criterion)}			
+\subsubsection{Seeing limit}			
 \begin{itemize}
 \itemt \( \varepsilon_s = 0.98 \dfrac{\lambda}{r_0} \)
 \end{itemize}
@@ -202,17 +202,22 @@
 
 \subsection{Plate scale}		
 \begin{itemize}
-\itemt \( \dfrac{1}{f} [\mathrm{rad}/m] = \dfrac{206265}{f} [\mathrm{arcsec}/m] \)
+\itemt \( \dfrac{1}{f} [\si{\radian/\metre}] = \dfrac{206265}{f} [\si{\arcsecond/\metre}] \)
 \end{itemize}
+
+% \subsection{Pixel scale}
+% \begin{itemize}
+%     \itemt 
+% \end{itemize}
 
 \subsection{Fitting error}		
 \begin{itemize}
-\itemt \( \sigma_\mathrm{fit}^2 = a_f (\dfrac{d_{sub}}{r_0})^{\frac{5}{3}} = 0.26 (\dfrac{d_{sub}}{r_0})^{\frac{5}{3}} \)
+\itemt \( \sigma_\mathrm{fit}^2 = a_f \left(\dfrac{d_{sub}}{r_0}\right)^{\frac{5}{3}} = 0.26 \left(\dfrac{d_{sub}}{r_0}\right)^{\frac{5}{3}} \)
 \end{itemize}
 
 \subsection{Adaptive optics error}
 \begin{itemize}
-\itemt \( \sigma_\mathrm{total}^2 = 0.3(\dfrac{d_\mathrm{sub}}{r_0})^{\frac{5}{3}} + (\dfrac{\theta}{\theta_0})^{\frac{5}{3}} + 28.4(\dfrac{\tau}{\tau_0})^{\frac{5}{3}} + C_{WFS} (\dfrac{\lambda}{F\tau d_\mathrm{sub}})^2 \)
+\itemt \( \sigma_\mathrm{total}^2 = 0.3\left(\dfrac{d_\mathrm{sub}}{r_0}\right)^{\frac{5}{3}} + \left(\dfrac{\theta}{\theta_0}\right)^{\frac{5}{3}} + 28.4\left(\dfrac{\tau}{\tau_0}\right)^{\frac{5}{3}} + C_{WFS} \left(\dfrac{\lambda}{F\tau d_\mathrm{sub}}\right)^2 \)
 \end{itemize}
 		 
 \subsection{Signal-to-noise ratio}
@@ -230,5 +235,5 @@
 
 \subsubsection{Tsiolkovsky rocket equation}
 \begin{itemize}
-\itemt \( \Delta v = v_e \ln(\dfrac{m_0}{m_f}) \)
+\itemt \( \Delta v = v_e \ln\left(\dfrac{m_0}{m_f}\right) \)
 \end{itemize}

@@ -381,10 +381,14 @@ e^{d_{11}}	& 0 			& \cdots	& 0	\\
 
 \subsubsection{Distance between two points}
 \begin{itemize}
-\item[In two dimensions]
-\itemt \( d_{12} = \sqrt[]{(x_2-x_1)^2 + (y_2-y_1)^2} \)
-\item[In higher dimensions]
-\itemt \( d_{ab} = \sqrt[]{(b_1-a_1)^2 + (b_2-a_2)^2 + \cdots + (b_n - a_n)^2} \)
+\item In two dimensions:
+\begin{itemize}
+    \itemt \( d_{12} = \sqrt[]{(x_2-x_1)^2 + (y_2-y_1)^2} \)
+\end{itemize}
+\item In higher dimensions:
+\begin{itemize}
+    \itemt \( d_{ab} = \sqrt[]{(b_1-a_1)^2 + (b_2-a_2)^2 + \cdots + (b_n - a_n)^2} \)
+\end{itemize}
 \end{itemize}
             
 
@@ -438,13 +442,13 @@ e^{d_{11}}	& 0 			& \cdots	& 0	\\
 \itemt Up-concave if $a>0$; down-concave if $a<0$
 \item[]
 \itemt \( f(x) = ax^2 + bx + c \)
-\itemt Vertex at \( (-\dfrac{b}{2a}, f(-\dfrac{b}{2a})) \)
+\itemt Vertex at \( \left(-\dfrac{b}{2a}, f\left(-\dfrac{b}{2a}\right)\right) \)
 \itemt Up-concave if $a>0$; down-concave if $a<0$
 \end{itemize}
 
 \subsubsection{Hyperbola}
 \begin{itemize}
-\itemt \( (\dfrac{x-h}{a})^2 - (\dfrac{y-k}{b})^2 = 1\)
+\itemt \( \left(\dfrac{x-h}{a}\right)^2 - \left(\dfrac{y-k}{b}\right)^2 = 1\)
 \itemt Centre at $(h,k)$
 \itemt Asymptotes through centre, slope $\pm\dfrac{b}{a}$
 \end{itemize}
@@ -457,7 +461,7 @@ e^{d_{11}}	& 0 			& \cdots	& 0	\\
 
 \subsubsection{Ellipse}
 \begin{itemize}
-\itemt \(1 = (\dfrac{x-h}{a})^2 + (\dfrac{y-k}{b})^2\)
+\itemt \(1 = \left(\dfrac{x-h}{a}\right)^2 + \left(\dfrac{y-k}{b}\right)^2\)
 \itemt Centre at $(h,k)$
 \itemt Vertices a units right/left from the centre and vertices b units up/down from the center.
 \end{itemize}	
@@ -482,13 +486,13 @@ e^{d_{11}}	& 0 			& \cdots	& 0	\\
 \def\arraystretch{2.5}
 \begin{tabular}{ |l|l|l|l|l| } 
 \hline
-\textbf{Cartesian}				& \(x = x\)						&\(y = y\)						&\(z=z\)				& \(dV = dx\ dy\ dz\)
+\textbf{Cartesian}				& \(x = x\)						&\(y = y\)						&\(z=z\)				& \(\dn V = \dn x\ \dn y\ \dn z\)
 \\ \hline
-\textbf{Polar (2D)}					&\(x = r \cos\phi	\)		&\(y = r\sin\phi\) & N/A & \(dA = r\ dr d\phi\)
+\textbf{Polar (2D)}					&\(x = r \cos\phi	\)		&\(y = r\sin\phi\) & N/A & \(\dn A = r\ \dn r \dn\phi\)
 \\ \hline
-\textbf{Cylindrical}			&\(x = r \cos\phi	\)			&\(y = r\sin\phi\)  			&\(z=z\)				& \(dV = r\ dr\ d\theta\ dz\)
+\textbf{Cylindrical}			&\(x = r \cos\phi	\)			&\(y = r\sin\phi\)  			&\(z=z\)				& \(\dn V = r\ \dn r\ \dn\theta\ \dn z\)
 \\ \hline
-\textbf{Spherical}				&\(x = r\sin\theta\cos\phi\)	&\(y = r\sin\theta\sin\phi\)	&\(z = r\cos\theta\)	& \(dV = r^2 \sin\theta\ dr\ d\theta\ d\phi \)
+\textbf{Spherical}				&\(x = r\sin\theta\cos\phi\)	&\(y = r\sin\theta\sin\phi\)	&\(z = r\cos\theta\)	& \(\dn V = r^2 \sin\theta\ \dn r\ \dn\theta\ \dn\phi \)
 \\ \hline
 \end{tabular}
 
@@ -501,7 +505,7 @@ e^{d_{11}}	& 0 			& \cdots	& 0	\\
 \\ \hline
 \textbf{Cylindrical}			&\(r=\sqrt{x^2 + y^2}\)			&\(\phi'= \arctan| \dfrac{y}{x}|\)\tab($\phi$ depends on quadrant) 				&\(z=z\)
 \\ \hline
-\textbf{Spherical}				&\(r=\sqrt{x^2 + y^2 + z^2}\)	&\(\phi'= \arctan| \dfrac{y}{x}|\)\tab($\phi$ depends on quadrant)				&\(\theta = \arccos(\dfrac{z}{\sqrt{x^2+y^2+z^2}})\)
+\textbf{Spherical}				&\(r=\sqrt{x^2 + y^2 + z^2}\)	&\(\phi'= \arctan| \dfrac{y}{x}|\)\tab($\phi$ depends on quadrant)				&\(\theta = \arccos\left(\dfrac{z}{\sqrt{x^2+y^2+z^2}}\right)\)
 \\ \hline
 \end{tabular}		
 
@@ -557,12 +561,12 @@ e^{d_{11}}	& 0 			& \cdots	& 0	\\
 \subsubsection{Definitions}
 \begin{itemize}
 \itemt SOH CAH TOA
-\itemt \( \sin\theta = \dfrac{opposite}{hypotenuse} \)
-\itemt \( \cos\theta = \dfrac{adjacent}{hypotenuse} \)
-\itemt \( \tan\theta = \dfrac{opposite}{adjacent} = \dfrac{\sin\theta}{\cos\theta} \)
-\itemt \( \cot\theta = \dfrac{adjacent}{opposite} = \dfrac{\cos\theta}{\sin\theta} \)
-\itemt \( \sec\theta = \dfrac{hypotenuse}{adjacent} \)
-\itemt \( \csc\theta = \dfrac{hypotenuse}{opposite} \)
+\itemt \( \sin\theta = \dfrac{\mathrm{opposite}}{\mathrm{hypotenuse}} \)
+\itemt \( \cos\theta = \dfrac{\mathrm{adjacent}}{\mathrm{hypotenuse}} \)
+\itemt \( \tan\theta = \dfrac{\mathrm{opposite}}{\mathrm{adjacent}} = \dfrac{\sin\theta}{\cos\theta} \)
+\itemt \( \cot\theta = \dfrac{\mathrm{adjacent}}{\mathrm{opposite}} = \dfrac{\cos\theta}{\sin\theta} \)
+\itemt \( \sec\theta = \dfrac{\mathrm{hypotenuse}}{\mathrm{adjacent}} \)
+\itemt \( \csc\theta = \dfrac{\mathrm{hypotenuse}}{\mathrm{opposite}} \)
 \end{itemize}
 
 \subsection{Identities}
@@ -1041,7 +1045,7 @@ y'_a(z)	&	y'_b(z)	\\
 \pp{}{x} & \pp{}{y} 	& \pp{}{z} \\
 f_x			& f_y 			& f_z
 \end{vmatrix}        
-	= (\pp{f_z}{y} - \pp{f_y}{z})\hat{x} + (\pp{f_x}{z} - \pp{f_z}{z})\hat{y} + (\pp{f_y}{x} - \pp{f_x}{y})\hat{z} \)
+	= \left(\pp{f_z}{y} - \pp{f_y}{z}\right)\hat{x} + \left(\pp{f_x}{z} - \pp{f_z}{z}\right)\hat{y} + \left(\pp{f_y}{x} - \pp{f_x}{y}\right)\hat{z} \)
 \end{itemize}
 
 \textit{In Cylindrical Coordinates}

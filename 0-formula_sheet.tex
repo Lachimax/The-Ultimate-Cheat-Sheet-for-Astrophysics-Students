@@ -46,6 +46,8 @@
 \usepackage{wasysym}
 \usepackage{times}
 \usepackage{graphicx,wrapfig,lipsum}
+\usepackage{siunitx}
+\usepackage{bigints}
 
 
 \urlstyle{same}
@@ -67,8 +69,26 @@
 \newcommand{\degrees}{^{\circ}}
 \newcommand{\scriptr}{\mathcalligra{r}\,}
 
+% UNITS
+\DeclareSIUnit{\adu}{ADU}
+\DeclareSIUnit{\angstrom}{Å}
+\DeclareSIUnit{\electron}{e^-}
+\DeclareSIUnit{\hubbleunits}{\kilo\metre\per\second\per\mega\parsec}
+\DeclareSIUnit{\parsec}{pc}
+\DeclareSIUnit{\kpc}{kpc}
+\DeclareSIUnit{\pixel}{pix}
+\DeclareSIUnit{\rmunits}{\radian\ \metre^{-2}}
+\DeclareSIUnit{\solarmass}{M_\odot}
+\DeclareSIUnit{\solarlum}{L_\odot}
+\DeclareSIUnit{\year}{year}
+
+\DeclareSIUnit{\pccm}{\parsec\ \centi\meter}
+\DeclareSIUnit{\dmunits}{\pccm^{-3}}
+
+% \renewcommand{\int}{\bigintssss}
+
 \title{{\large A Web of Worlds presents} \ \\\ The Ultimate Cheat Sheet for Astrophysics Students}
-\date{v 1.1 \\ \today}
+\date{v 1.1.1 \\ \today}
 \author{Lachlan Marnoch \\ \url{www.webofworlds.net}}
 
 \begin{document}
